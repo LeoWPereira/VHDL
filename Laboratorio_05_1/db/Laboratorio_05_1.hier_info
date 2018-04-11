@@ -61,8 +61,8 @@ leds[6] <= LessThan6.DB_MAX_OUTPUT_PORT_TYPE
 leds[7] <= LessThan7.DB_MAX_OUTPUT_PORT_TYPE
 leds[8] <= LessThan8.DB_MAX_OUTPUT_PORT_TYPE
 leds[9] <= LessThan9.DB_MAX_OUTPUT_PORT_TYPE
-leds[10] <= LessThan10.DB_MAX_OUTPUT_PORT_TYPE
-leds[11] <= LessThan11.DB_MAX_OUTPUT_PORT_TYPE
-leds[12] <= LessThan12.DB_MAX_OUTPUT_PORT_TYPE
+leds[10] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[11] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[12] <= leds.DB_MAX_OUTPUT_PORT_TYPE
 
 

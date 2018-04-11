@@ -39,9 +39,10 @@ architecture Laboratorio_05_1 of Laboratorio_05_1 IS
 		END GENERATE SOMA_ENTRADAS;
 		
 		ACENDE_LEDS: for i in 0 to (N - 1) generate
-			leds(i) <= '1' when (i < soma(N) and N < 10) else
-						  '0' when (i < soma(N) and N >= 10) else
-						  '0' when (N < 10) else
-						  '1';
+			leds(i) <= '1' when (i < soma(N) and i < 10) 	else
+						  '0' when (i < soma(N) and i >= 10) 	else
+						  '0' when (i > soma(N) and i < 10) 	else
+						  '1' when (i >= soma(N) and i >= 10) 	else
+						  '0';
 		end generate ACENDE_LEDS;
 end architecture;

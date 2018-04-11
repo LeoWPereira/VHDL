@@ -50,4 +50,31 @@ set_global_assignment -name VHDL_FILE Laboratorio_05_1.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_F1 -to botoesChaves[12]
+set_location_assignment PIN_G3 -to botoesChaves[11]
+set_location_assignment PIN_H2 -to botoesChaves[10]
+set_location_assignment PIN_D2 -to botoesChaves[9]
+set_location_assignment PIN_E4 -to botoesChaves[8]
+set_location_assignment PIN_E3 -to botoesChaves[7]
+set_location_assignment PIN_H7 -to botoesChaves[6]
+set_location_assignment PIN_J7 -to botoesChaves[5]
+set_location_assignment PIN_G5 -to botoesChaves[4]
+set_location_assignment PIN_G4 -to botoesChaves[3]
+set_location_assignment PIN_H6 -to botoesChaves[2]
+set_location_assignment PIN_H5 -to botoesChaves[1]
+set_location_assignment PIN_J6 -to botoesChaves[0]
+set_location_assignment PIN_H12 -to leds[12]
+set_location_assignment PIN_F11 -to leds[11]
+set_location_assignment PIN_E11 -to leds[10]
+set_location_assignment PIN_B1 -to leds[9]
+set_location_assignment PIN_B2 -to leds[8]
+set_location_assignment PIN_C2 -to leds[7]
+set_location_assignment PIN_C1 -to leds[6]
+set_location_assignment PIN_E1 -to leds[5]
+set_location_assignment PIN_F2 -to leds[4]
+set_location_assignment PIN_H1 -to leds[3]
+set_location_assignment PIN_J3 -to leds[2]
+set_location_assignment PIN_J2 -to leds[1]
+set_location_assignment PIN_J1 -to leds[0]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

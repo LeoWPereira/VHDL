@@ -2,10 +2,12 @@ library ieee;
 
 use ieee.std_logic_1164.all;
 
-PACKAGE own_library IS
+package own_library is
 
 --------------------------------------------------
-TYPE SSD IS ARRAY (6 DOWNTO 0) OF std_logic;
+type SSD is array (6 downto 0) of std_logic;
+
+type SSDArray is array (natural range <>) of SSD;
 --------------------------------------------------
 
 --------------------------------------------------
@@ -26,7 +28,5 @@ constant SSD_D: SSD := "0100001";
 constant SSD_E: SSD := "0000110";
 constant SSD_F: SSD := "0001110";
 --------------------------------------------------
-
-
 
 END own_library;
