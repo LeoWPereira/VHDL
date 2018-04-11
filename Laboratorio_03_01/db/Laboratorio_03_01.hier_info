@@ -1,0 +1,28 @@
+|Laboratorio_03_01
+sel[0] => Equal0.IN3
+sel[0] => Equal1.IN3
+sel[0] => Equal2.IN3
+sel[1] => Equal0.IN2
+sel[1] => Equal1.IN2
+sel[1] => Equal2.IN2
+num1[0] => Mult0.IN1
+num1[0] => Add0.IN4
+num1[0] => Add1.IN2
+num1[1] => Mult0.IN0
+num1[1] => Add0.IN3
+num1[1] => Add1.IN1
+num2[0] => Mult0.IN3
+num2[0] => Add1.IN4
+num2[0] => Add0.IN2
+num2[1] => Mult0.IN2
+num2[1] => Add1.IN3
+num2[1] => Add0.IN1
+outSSD[0] <= outSSD.DB_MAX_OUTPUT_PORT_TYPE
+outSSD[1] <= outSSD.DB_MAX_OUTPUT_PORT_TYPE
+outSSD[2] <= outSSD.DB_MAX_OUTPUT_PORT_TYPE
+outSSD[3] <= outSSD.DB_MAX_OUTPUT_PORT_TYPE
+outSSD[4] <= outSSD.DB_MAX_OUTPUT_PORT_TYPE
+outSSD[5] <= outSSD.DB_MAX_OUTPUT_PORT_TYPE
+outSSD[6] <= outSSD.DB_MAX_OUTPUT_PORT_TYPE
+
+
