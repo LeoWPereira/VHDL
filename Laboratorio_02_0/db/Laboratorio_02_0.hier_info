@@ -1,0 +1,23 @@
+|Laboratorio_02_0
+grayIn[0] => binOut.IN1
+grayIn[1] => binOut.IN1
+grayIn[2] => binOut.IN0
+grayIn[3] => binOut.IN1
+grayIn[3] => binOut[3].DATAIN
+binIn[0] => grayOut.IN0
+binIn[1] => grayOut.IN0
+binIn[1] => grayOut.IN1
+binIn[2] => grayOut.IN0
+binIn[2] => grayOut.IN1
+binIn[3] => grayOut.IN1
+binIn[3] => grayOut[3].DATAIN
+grayOut[0] <= grayOut.DB_MAX_OUTPUT_PORT_TYPE
+grayOut[1] <= grayOut.DB_MAX_OUTPUT_PORT_TYPE
+grayOut[2] <= grayOut.DB_MAX_OUTPUT_PORT_TYPE
+grayOut[3] <= binIn[3].DB_MAX_OUTPUT_PORT_TYPE
+binOut[0] <= binOut.DB_MAX_OUTPUT_PORT_TYPE
+binOut[1] <= binOut.DB_MAX_OUTPUT_PORT_TYPE
+binOut[2] <= binOut.DB_MAX_OUTPUT_PORT_TYPE
+binOut[3] <= grayIn[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

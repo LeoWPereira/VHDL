@@ -1,0 +1,17 @@
+|Laboratorio_02_4
+A => L.IN1
+A => T.IN0
+B => L.IN0
+B => T.IN1
+B => T.IN1
+C => L.IN0
+C => F.IN1
+D => L.IN1
+D => L.IN1
+D => R.IN1
+L <= L.DB_MAX_OUTPUT_PORT_TYPE
+T <= T.DB_MAX_OUTPUT_PORT_TYPE
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+R <= R.DB_MAX_OUTPUT_PORT_TYPE
+
+

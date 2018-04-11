@@ -1,0 +1,18 @@
+|Laboratorio_02_3
+chaves[0] => Add0.IN8
+chaves[0] => counter2[3].DATAA
+chaves[1] => counter2[0].OUTPUTSELECT
+chaves[1] => counter2[1].OUTPUTSELECT
+chaves[1] => counter2[2].OUTPUTSELECT
+chaves[1] => counter2[3].OUTPUTSELECT
+chaves[2] => counter3[0].OUTPUTSELECT
+chaves[2] => counter3[1].OUTPUTSELECT
+chaves[2] => counter3[2].OUTPUTSELECT
+chaves[2] => counter3[3].OUTPUTSELECT
+chaves[3] => counter4[0].OUTPUTSELECT
+chaves[3] => counter4[1].OUTPUTSELECT
+chaves[3] => counter4[2].OUTPUTSELECT
+chaves[3] => counter4[3].OUTPUTSELECT
+led <= led.DB_MAX_OUTPUT_PORT_TYPE
+
+

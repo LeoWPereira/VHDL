@@ -1,0 +1,92 @@
+-------------------------------------
+
+LIBRARY ieee;
+
+USE ieee.std_logic_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+-------------------------------------
+
+ENTITY Laboratorio_02_1 IS
+
+PORT (
+
+chaves: IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+
+leds: OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+
+SSD: OUT STD_LOGIC_VECTOR(6 DOWNTO 0));
+
+END ENTITY;
+
+------------------------------------
+
+ARCHITECTURE Laboratorio_02_1 OF Laboratorio_02_1 IS
+
+	signal counter1: unsigned(0 to 3);
+	signal counter2: unsigned(0 to 3);
+	signal counter3: unsigned(0 to 3);
+	signal counter4: unsigned(0 to 3);
+	signal counter5: unsigned(0 to 3);
+	signal counter6: unsigned(0 to 3);
+	signal counter7: unsigned(0 to 3);
+	signal counter8: unsigned(0 to 3);
+	signal counter9: unsigned(0 to 3);
+	signal counter10: unsigned(0 to 3);
+	
+	signal gt_u: std_logic_vector(3 downto 0);
+	
+BEGIN
+	
+	counter1 <= "0001" WHEN (chaves(0) = '1') ELSE
+					"0000";
+	
+	counter2 <= counter1 + 1 WHEN (chaves(1) = '1') ELSE 
+					counter1;
+					
+	counter3 <= counter2 + 1 WHEN (chaves(2) = '1') ELSE 
+					counter2;
+					
+	counter4 <= counter3 + 1 WHEN (chaves(3) = '1') ELSE 
+					counter3;
+					
+	counter5 <= counter4 + 1 WHEN (chaves(4) = '1') ELSE 
+					counter4;
+					
+	counter6 <= counter5 + 1 WHEN (chaves(5) = '1') ELSE 
+					counter5;
+					
+	counter7 <= counter6 + 1 WHEN (chaves(6) = '1') ELSE 
+					counter6;
+					
+	counter8 <= counter7 + 1 WHEN (chaves(7) = '1') ELSE 
+					counter7;
+				
+	counter9 <= counter8 + 1 WHEN (chaves(8) = '1') ELSE 
+					counter8;
+					
+	counter10 <= counter9 + 1 WHEN (chaves(9) = '1') ELSE 
+					counter9;
+					
+	
+	---
+	--- LEDS 
+	---
+	
+	leds <= std_logic_vector(unsigned(counter10));
+	
+	
+	
+	---
+	--- SSD
+	---
+	
+	SSD(0) <= '1' WHEN (counter10 = "0001") OR (counter10 = "0100") ELSE '0';
+	SSD(1) <= '1' WHEN (counter10 = "0101") OR (counter10 = "0110") ELSE '0';
+	SSD(2) <= '1' WHEN (counter10 = "0010") ELSE '0';
+	SSD(3) <= '1' WHEN (counter10 = "0001") OR (counter10 = "0100") OR (counter10 = "0111") OR (counter10 = "1010") ELSE '0';
+	SSD(4) <= '1' WHEN (counter10 = "0001") OR (counter10 = "0011") OR (counter10 = "0100") OR (counter10 = "0101") OR (counter10 = "0111") OR (counter10 = "1001") ELSE '0';
+	SSD(5) <= '1' WHEN (counter10 = "0001") OR (counter10 = "0010") OR (counter10 = "0011") OR (counter10 = "0111") ELSE '0';
+	SSD(6) <= '1' WHEN (counter10 = "0000") OR (counter10 = "0001") OR (counter10 = "0111") ELSE '0';
+	
+END ARCHITECTURE;

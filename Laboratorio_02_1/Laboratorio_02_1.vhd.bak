@@ -1,0 +1,27 @@
+-------------------------------------
+
+LIBRARY ieee;
+
+USE ieee.std_logic_1164.ALL;
+
+-------------------------------------
+
+ENTITY Laboratorio_02_1 IS
+
+PORT (
+
+c1, c2, c3, c4, c5, c6, c7, c8, c9, c10: IN STD_LOGIC;
+
+leds: OUT STD_LOGIC_VECTOR(3 DOWNTO 0));
+
+END ENTITY;
+
+------------------------------------
+
+ARCHITECTURE Laboratorio_02_1 OF Laboratorio_02_1 IS
+
+BEGIN
+
+leds <= c1 + c2 + c3 + c4 + c5 + c6 + c7 + c8 + c9 + c10;
+
+END ARCHITECTURE;
