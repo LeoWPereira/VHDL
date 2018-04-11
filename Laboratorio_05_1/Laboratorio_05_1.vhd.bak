@@ -1,6 +1,6 @@
 -------------------------------------
 
---Verifique	se	uma	sequencia	de	entrada	de	N	bits	possui 3	ou	mais	'0'	seguidos.
+--Verifique	se	uma sequencia de entrada de N	bits possui 3 ou mais '0' seguidos.
 
 -------------------------------------
 
@@ -12,7 +12,7 @@ use IEEE.STD_LOGIC_UNSIGNED.all;
 
 -------------------------------------
 
-entity Laboratorio_04_2 is
+entity Laboratorio_05_1 is
 	generic (
         N: integer := 8
     );
@@ -25,7 +25,7 @@ end entity;
 
 ------------------------------------
 
-architecture Laboratorio_04_2 of Laboratorio_04_2 is
+architecture Laboratorio_05_1 of Laboratorio_05_1 is
 	type array_of_integer is array(N downto 0) of integer range 0 to N;
 	
 	signal soma: array_of_integer;

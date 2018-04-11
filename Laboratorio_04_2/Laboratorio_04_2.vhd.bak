@@ -1,0 +1,48 @@
+-------------------------------------
+
+--Verifique	se	uma sequencia de entrada de N	bits possui 3 ou mais '0' seguidos.
+
+-------------------------------------
+
+library ieee;
+
+use ieee.std_logic_1164.all;
+use IEEE.NUMERIC_STD.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
+
+-------------------------------------
+
+entity Laboratorio_04_2 is
+	generic (
+        N: integer := 8
+    );
+
+	port (
+		entrada: in std_logic_vector((N - 1) downto 0);
+
+		led: out std_logic);
+end entity;
+
+------------------------------------
+
+architecture Laboratorio_04_2 of Laboratorio_04_2 is
+	type array_of_integer is array(N downto 0) of integer range 0 to N;
+	
+	signal soma: array_of_integer;
+	signal comparacao: STD_LOGIC_VECTOR(N downto 0);
+	
+	signal logico: std_logic;
+	
+	begin
+		soma(0) <= 0;
+		comparacao(0) <= '0';
+		
+		a: for i in 1 to N generate
+			soma(i) <= soma(i - 1) + 1 when entrada(i - 1) = '0' else 0;
+			
+			comparacao(i) <= '1' when soma(i) = 3 or comparacao(i-1) = '1' else '0';
+		end generate;
+		
+		led <= '1' when comparacao(N) = '1' else
+				 '0';			
+end architecture;
