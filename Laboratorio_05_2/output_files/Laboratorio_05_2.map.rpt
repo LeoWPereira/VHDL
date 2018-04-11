@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Laboratorio_05_2
-Wed Apr 11 15:21:08 2018
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Wed Apr 11 01:44:52 2018
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -13,17 +13,18 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. User-Specified and Inferred Latches
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: Top-level Entity: |Laboratorio_05_2
- 12. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
- 13. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
- 14. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod1
- 15. Parameter Settings for Inferred Entity Instance: lpm_divide:Div1
- 16. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod2
- 17. Elapsed Time Per Partition
- 18. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |Laboratorio_05_2
+ 11. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
+ 12. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
+ 13. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod1
+ 14. Parameter Settings for Inferred Entity Instance: lpm_divide:Div1
+ 15. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod2
+ 16. Parameter Settings for Inferred Entity Instance: lpm_divide:Div2
+ 17. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod3
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
 
 
 
@@ -49,16 +50,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Apr 11 15:21:08 2018           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Analysis & Synthesis Status        ; Successful - Wed Apr 11 01:44:52 2018           ;
+; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Laboratorio_05_2                                ;
 ; Top-level Entity Name              ; Laboratorio_05_2                                ;
 ; Family                             ; Cyclone III                                     ;
-; Total logic elements               ; 752                                             ;
-;     Total combinational functions  ; 752                                             ;
+; Total logic elements               ; 5,439                                           ;
+;     Total combinational functions  ; 5,439                                           ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 31                                              ;
+; Total pins                         ; 41                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -169,51 +170,51 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                          ; Library ;
 +----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------+---------+
-; ../share/own_library.vhd         ; yes             ; User VHDL File               ; C:/altera/13.0/Projects/share/own_library.vhd                         ;         ;
-; Laboratorio_05_2.vhd             ; yes             ; User VHDL File               ; C:/altera/13.0/Projects/Laboratorio_05_2/Laboratorio_05_2.vhd         ;         ;
+; ../share/own_library.vhd         ; yes             ; User VHDL File               ; C:/altera/13.0sp1/VHDL/share/own_library.vhd                          ;         ;
+; Laboratorio_05_2.vhd             ; yes             ; User VHDL File               ; C:/altera/13.0sp1/VHDL/Laboratorio_05_2/Laboratorio_05_2.vhd          ;         ;
 ; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
 ; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
 ; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
 ; aglobal130.inc                   ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc      ;         ;
-; db/lpm_divide_9bm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0/Projects/Laboratorio_05_2/db/lpm_divide_9bm.tdf        ;         ;
-; db/sign_div_unsign_7nh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0/Projects/Laboratorio_05_2/db/sign_div_unsign_7nh.tdf   ;         ;
-; db/alt_u_div_p8f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0/Projects/Laboratorio_05_2/db/alt_u_div_p8f.tdf         ;         ;
-; db/add_sub_unc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0/Projects/Laboratorio_05_2/db/add_sub_unc.tdf           ;         ;
-; db/add_sub_vnc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0/Projects/Laboratorio_05_2/db/add_sub_vnc.tdf           ;         ;
-; db/lpm_divide_mhm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0/Projects/Laboratorio_05_2/db/lpm_divide_mhm.tdf        ;         ;
-; db/sign_div_unsign_nlh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0/Projects/Laboratorio_05_2/db/sign_div_unsign_nlh.tdf   ;         ;
-; db/alt_u_div_p5f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0/Projects/Laboratorio_05_2/db/alt_u_div_p5f.tdf         ;         ;
+; db/lpm_divide_9bm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0sp1/VHDL/Laboratorio_05_2/db/lpm_divide_9bm.tdf         ;         ;
+; db/sign_div_unsign_7nh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0sp1/VHDL/Laboratorio_05_2/db/sign_div_unsign_7nh.tdf    ;         ;
+; db/alt_u_div_p8f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0sp1/VHDL/Laboratorio_05_2/db/alt_u_div_p8f.tdf          ;         ;
+; db/add_sub_unc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0sp1/VHDL/Laboratorio_05_2/db/add_sub_unc.tdf            ;         ;
+; db/add_sub_vnc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0sp1/VHDL/Laboratorio_05_2/db/add_sub_vnc.tdf            ;         ;
+; db/lpm_divide_mhm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0sp1/VHDL/Laboratorio_05_2/db/lpm_divide_mhm.tdf         ;         ;
+; db/sign_div_unsign_nlh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0sp1/VHDL/Laboratorio_05_2/db/sign_div_unsign_nlh.tdf    ;         ;
+; db/alt_u_div_p5f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0sp1/VHDL/Laboratorio_05_2/db/alt_u_div_p5f.tdf          ;         ;
 +----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                                                                            ;
-+---------------------------------------------+----------------------------------------------------------------------------------------------------------+
-; Resource                                    ; Usage                                                                                                    ;
-+---------------------------------------------+----------------------------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 752                                                                                                      ;
-;                                             ;                                                                                                          ;
-; Total combinational functions               ; 752                                                                                                      ;
-; Logic element usage by number of LUT inputs ;                                                                                                          ;
-;     -- 4 input functions                    ; 264                                                                                                      ;
-;     -- 3 input functions                    ; 215                                                                                                      ;
-;     -- <=2 input functions                  ; 273                                                                                                      ;
-;                                             ;                                                                                                          ;
-; Logic elements by mode                      ;                                                                                                          ;
-;     -- normal mode                          ; 534                                                                                                      ;
-;     -- arithmetic mode                      ; 218                                                                                                      ;
-;                                             ;                                                                                                          ;
-; Total registers                             ; 0                                                                                                        ;
-;     -- Dedicated logic registers            ; 0                                                                                                        ;
-;     -- I/O registers                        ; 0                                                                                                        ;
-;                                             ;                                                                                                          ;
-; I/O pins                                    ; 31                                                                                                       ;
-; Embedded Multiplier 9-bit elements          ; 0                                                                                                        ;
-; Maximum fan-out node                        ; lpm_divide:Mod0|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|op_20~32 ;
-; Maximum fan-out                             ; 49                                                                                                       ;
-; Total fan-out                               ; 2207                                                                                                     ;
-; Average fan-out                             ; 2.71                                                                                                     ;
-+---------------------------------------------+----------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                       ;
++---------------------------------------------+---------------------+
+; Resource                                    ; Usage               ;
++---------------------------------------------+---------------------+
+; Estimated Total logic elements              ; 5,439               ;
+;                                             ;                     ;
+; Total combinational functions               ; 5439                ;
+; Logic element usage by number of LUT inputs ;                     ;
+;     -- 4 input functions                    ; 1737                ;
+;     -- 3 input functions                    ; 1738                ;
+;     -- <=2 input functions                  ; 1964                ;
+;                                             ;                     ;
+; Logic elements by mode                      ;                     ;
+;     -- normal mode                          ; 3746                ;
+;     -- arithmetic mode                      ; 1693                ;
+;                                             ;                     ;
+; Total registers                             ; 0                   ;
+;     -- Dedicated logic registers            ; 0                   ;
+;     -- I/O registers                        ; 0                   ;
+;                                             ;                     ;
+; I/O pins                                    ; 41                  ;
+; Embedded Multiplier 9-bit elements          ; 0                   ;
+; Maximum fan-out node                        ; soma_botoes[3][1]~0 ;
+; Maximum fan-out                             ; 106                 ;
+; Total fan-out                               ; 15771               ;
+; Average fan-out                             ; 2.86                ;
++---------------------------------------------+---------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -221,60 +222,37 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                               ; Library Name ;
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------+--------------+
-; |Laboratorio_05_2                      ; 752 (180)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 31   ; 0            ; |Laboratorio_05_2                                                                                                 ; work         ;
-;    |lpm_divide:Div0|                   ; 83 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Div0                                                                                 ; work         ;
-;       |lpm_divide_mhm:auto_generated|  ; 83 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Div0|lpm_divide_mhm:auto_generated                                                   ; work         ;
-;          |sign_div_unsign_nlh:divider| ; 83 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Div0|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider                       ; work         ;
-;             |alt_u_div_p5f:divider|    ; 83 (83)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Div0|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider ; work         ;
-;    |lpm_divide:Div1|                   ; 47 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Div1                                                                                 ; work         ;
-;       |lpm_divide_mhm:auto_generated|  ; 47 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Div1|lpm_divide_mhm:auto_generated                                                   ; work         ;
-;          |sign_div_unsign_nlh:divider| ; 47 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Div1|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider                       ; work         ;
-;             |alt_u_div_p5f:divider|    ; 47 (47)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Div1|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider ; work         ;
-;    |lpm_divide:Mod0|                   ; 268 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Mod0                                                                                 ; work         ;
-;       |lpm_divide_9bm:auto_generated|  ; 268 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Mod0|lpm_divide_9bm:auto_generated                                                   ; work         ;
-;          |sign_div_unsign_7nh:divider| ; 268 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Mod0|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider                       ; work         ;
-;             |alt_u_div_p8f:divider|    ; 268 (268)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Mod0|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider ; work         ;
-;    |lpm_divide:Mod1|                   ; 152 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Mod1                                                                                 ; work         ;
-;       |lpm_divide_9bm:auto_generated|  ; 152 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Mod1|lpm_divide_9bm:auto_generated                                                   ; work         ;
-;          |sign_div_unsign_7nh:divider| ; 152 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Mod1|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider                       ; work         ;
-;             |alt_u_div_p8f:divider|    ; 152 (152)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Mod1|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider ; work         ;
-;    |lpm_divide:Mod2|                   ; 22 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Mod2                                                                                 ; work         ;
-;       |lpm_divide_9bm:auto_generated|  ; 22 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Mod2|lpm_divide_9bm:auto_generated                                                   ; work         ;
-;          |sign_div_unsign_7nh:divider| ; 22 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Mod2|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider                       ; work         ;
-;             |alt_u_div_p8f:divider|    ; 22 (22)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Mod2|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider ; work         ;
+; |Laboratorio_05_2                      ; 5439 (328)        ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 41   ; 0            ; |Laboratorio_05_2                                                                                                 ; work         ;
+;    |lpm_divide:Div0|                   ; 250 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Div0                                                                                 ; work         ;
+;       |lpm_divide_mhm:auto_generated|  ; 250 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Div0|lpm_divide_mhm:auto_generated                                                   ; work         ;
+;          |sign_div_unsign_nlh:divider| ; 250 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Div0|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider                       ; work         ;
+;             |alt_u_div_p5f:divider|    ; 250 (250)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Div0|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider ; work         ;
+;    |lpm_divide:Div1|                   ; 255 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Div1                                                                                 ; work         ;
+;       |lpm_divide_mhm:auto_generated|  ; 255 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Div1|lpm_divide_mhm:auto_generated                                                   ; work         ;
+;          |sign_div_unsign_nlh:divider| ; 255 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Div1|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider                       ; work         ;
+;             |alt_u_div_p5f:divider|    ; 255 (255)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Div1|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider ; work         ;
+;    |lpm_divide:Div2|                   ; 215 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Div2                                                                                 ; work         ;
+;       |lpm_divide_mhm:auto_generated|  ; 215 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Div2|lpm_divide_mhm:auto_generated                                                   ; work         ;
+;          |sign_div_unsign_nlh:divider| ; 215 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Div2|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider                       ; work         ;
+;             |alt_u_div_p5f:divider|    ; 215 (215)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Div2|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider ; work         ;
+;    |lpm_divide:Mod0|                   ; 1147 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Mod0                                                                                 ; work         ;
+;       |lpm_divide_9bm:auto_generated|  ; 1147 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Mod0|lpm_divide_9bm:auto_generated                                                   ; work         ;
+;          |sign_div_unsign_7nh:divider| ; 1147 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Mod0|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider                       ; work         ;
+;             |alt_u_div_p8f:divider|    ; 1147 (1147)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Mod0|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider ; work         ;
+;    |lpm_divide:Mod1|                   ; 1147 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Mod1                                                                                 ; work         ;
+;       |lpm_divide_9bm:auto_generated|  ; 1147 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Mod1|lpm_divide_9bm:auto_generated                                                   ; work         ;
+;          |sign_div_unsign_7nh:divider| ; 1147 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Mod1|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider                       ; work         ;
+;             |alt_u_div_p8f:divider|    ; 1147 (1147)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Mod1|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider ; work         ;
+;    |lpm_divide:Mod2|                   ; 1034 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Mod2                                                                                 ; work         ;
+;       |lpm_divide_9bm:auto_generated|  ; 1034 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Mod2|lpm_divide_9bm:auto_generated                                                   ; work         ;
+;          |sign_div_unsign_7nh:divider| ; 1034 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Mod2|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider                       ; work         ;
+;             |alt_u_div_p8f:divider|    ; 1034 (1034)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Mod2|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider ; work         ;
+;    |lpm_divide:Mod3|                   ; 1063 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Mod3                                                                                 ; work         ;
+;       |lpm_divide_9bm:auto_generated|  ; 1063 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Mod3|lpm_divide_9bm:auto_generated                                                   ; work         ;
+;          |sign_div_unsign_7nh:divider| ; 1063 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Mod3|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider                       ; work         ;
+;             |alt_u_div_p8f:divider|    ; 1063 (1063)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_05_2|lpm_divide:Mod3|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider ; work         ;
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+----------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                ;
-+-----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
-+-----------------------------------------------------+---------------------+------------------------+
-; ssds[0][0]$latch                                    ; GND                 ; yes                    ;
-; ssds[0][1]$latch                                    ; GND                 ; yes                    ;
-; ssds[0][2]$latch                                    ; GND                 ; yes                    ;
-; ssds[0][3]$latch                                    ; GND                 ; yes                    ;
-; ssds[0][4]$latch                                    ; GND                 ; yes                    ;
-; ssds[0][5]$latch                                    ; GND                 ; yes                    ;
-; ssds[0][6]$latch                                    ; GND                 ; yes                    ;
-; ssds[1][0]$latch                                    ; GND                 ; yes                    ;
-; ssds[1][1]$latch                                    ; GND                 ; yes                    ;
-; ssds[1][2]$latch                                    ; GND                 ; yes                    ;
-; ssds[1][3]$latch                                    ; GND                 ; yes                    ;
-; ssds[1][4]$latch                                    ; GND                 ; yes                    ;
-; ssds[1][5]$latch                                    ; GND                 ; yes                    ;
-; ssds[1][6]$latch                                    ; GND                 ; yes                    ;
-; ssds[2][0]$latch                                    ; GND                 ; yes                    ;
-; ssds[2][1]$latch                                    ; GND                 ; yes                    ;
-; ssds[2][2]$latch                                    ; GND                 ; yes                    ;
-; ssds[2][3]$latch                                    ; GND                 ; yes                    ;
-; ssds[2][4]$latch                                    ; GND                 ; yes                    ;
-; ssds[2][5]$latch                                    ; GND                 ; yes                    ;
-; ssds[2][6]$latch                                    ; GND                 ; yes                    ;
-; Number of user-specified and inferred latches = 21  ;                     ;                        ;
-+-----------------------------------------------------+---------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -292,28 +270,27 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |Laboratorio_05_2|ssds[0][6] ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |Laboratorio_05_2|ssds[1][6] ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |Laboratorio_05_2|ssds[2][6] ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Laboratorio_05_2|ssds[0][4] ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Laboratorio_05_2|ssds[1][4] ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Laboratorio_05_2|ssds[2][1] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 13:1               ; 5 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |Laboratorio_05_2|outSSDs  ;
+; 13:1               ; 5 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |Laboratorio_05_2|outSSDs  ;
+; 13:1               ; 5 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |Laboratorio_05_2|outSSDs  ;
+; 13:1               ; 5 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |Laboratorio_05_2|outSSDs  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
 +----------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: Top-level Entity: |Laboratorio_05_2 ;
-+----------------+-------+---------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                    ;
-+----------------+-------+---------------------------------------------------------+
-; numChaves      ; 5     ; Signed Integer                                          ;
-; numBotoes      ; 5     ; Signed Integer                                          ;
-+----------------+-------+---------------------------------------------------------+
++--------------------+-------+-----------------------------------------------------+
+; Parameter Name     ; Value ; Type                                                ;
++--------------------+-------+-----------------------------------------------------+
+; NUMERO_CHAVES      ; 10    ; Signed Integer                                      ;
+; NUMERO_BOTOES      ; 3     ; Signed Integer                                      ;
+; TAMANHO_NUMERO_SSD ; 10    ; Signed Integer                                      ;
++--------------------+-------+-----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -432,12 +409,58 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Div2 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 31             ; Untyped                ;
+; LPM_WIDTHD             ; 4              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_mhm ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod3 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 31             ; Untyped                ;
+; LPM_WIDTHD             ; 31             ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_9bm ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:17     ;
 +----------------+--------------+
 
 
@@ -445,45 +468,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Synthesis
+Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Apr 11 15:21:01 2018
+    Info: Processing started: Wed Apr 11 01:44:33 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Laboratorio_05_2 -c Laboratorio_05_2
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 1 design units, including 0 entities, in source file /altera/13.0/projects/share/own_library.vhd
+Info (12021): Found 1 design units, including 0 entities, in source file /altera/13.0sp1/vhdl/share/own_library.vhd
     Info (12022): Found design unit 1: own_library
 Info (12021): Found 2 design units, including 1 entities, in source file laboratorio_05_2.vhd
     Info (12022): Found design unit 1: Laboratorio_05_2-Laboratorio_05_2
     Info (12023): Found entity 1: Laboratorio_05_2
 Info (12127): Elaborating entity "Laboratorio_05_2" for the top level hierarchy
-Warning (10542): VHDL Variable Declaration warning at math_real.vhd(2373): used initial value expression for variable "RECIPROCAL" because variable was never assigned a value
-Info (10041): Inferred latch for "ssds[2][0]" at Laboratorio_05_2.vhd(66)
-Info (10041): Inferred latch for "ssds[2][1]" at Laboratorio_05_2.vhd(66)
-Info (10041): Inferred latch for "ssds[2][2]" at Laboratorio_05_2.vhd(66)
-Info (10041): Inferred latch for "ssds[2][3]" at Laboratorio_05_2.vhd(66)
-Info (10041): Inferred latch for "ssds[2][4]" at Laboratorio_05_2.vhd(66)
-Info (10041): Inferred latch for "ssds[2][5]" at Laboratorio_05_2.vhd(66)
-Info (10041): Inferred latch for "ssds[2][6]" at Laboratorio_05_2.vhd(66)
-Info (10041): Inferred latch for "ssds[1][0]" at Laboratorio_05_2.vhd(66)
-Info (10041): Inferred latch for "ssds[1][1]" at Laboratorio_05_2.vhd(66)
-Info (10041): Inferred latch for "ssds[1][2]" at Laboratorio_05_2.vhd(66)
-Info (10041): Inferred latch for "ssds[1][3]" at Laboratorio_05_2.vhd(66)
-Info (10041): Inferred latch for "ssds[1][4]" at Laboratorio_05_2.vhd(66)
-Info (10041): Inferred latch for "ssds[1][5]" at Laboratorio_05_2.vhd(66)
-Info (10041): Inferred latch for "ssds[1][6]" at Laboratorio_05_2.vhd(66)
-Info (10041): Inferred latch for "ssds[0][0]" at Laboratorio_05_2.vhd(66)
-Info (10041): Inferred latch for "ssds[0][1]" at Laboratorio_05_2.vhd(66)
-Info (10041): Inferred latch for "ssds[0][2]" at Laboratorio_05_2.vhd(66)
-Info (10041): Inferred latch for "ssds[0][3]" at Laboratorio_05_2.vhd(66)
-Info (10041): Inferred latch for "ssds[0][4]" at Laboratorio_05_2.vhd(66)
-Info (10041): Inferred latch for "ssds[0][5]" at Laboratorio_05_2.vhd(66)
-Info (10041): Inferred latch for "ssds[0][6]" at Laboratorio_05_2.vhd(66)
-Info (278001): Inferred 5 megafunctions from design logic
+Info (278001): Inferred 7 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod1"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div1"
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod2"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div2"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod3"
 Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0"
 Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter:
     Info (12134): Parameter "LPM_WIDTHN" = "31"
@@ -512,38 +515,102 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/sign
     Info (12023): Found entity 1: sign_div_unsign_nlh
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_p5f.tdf
     Info (12023): Found entity 1: alt_u_div_p5f
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod1"
-Info (12133): Instantiated megafunction "lpm_divide:Mod1" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTHN" = "31"
-    Info (12134): Parameter "LPM_WIDTHD" = "31"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Div1"
-Info (12133): Instantiated megafunction "lpm_divide:Div1" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTHN" = "31"
-    Info (12134): Parameter "LPM_WIDTHD" = "4"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (286030): Timing-Driven Synthesis is running
 Info (17016): Found the following redundant logic cells in design
-    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|op_19~26"
-    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|op_20~30"
-    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|op_21~34"
-    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|op_23~38"
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_30_result_int[0]~0"
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|op_3~14"
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|op_4~18"
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|op_5~22"
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|op_6~26"
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|op_7~30"
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|op_8~34"
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_18_result_int[0]~38"
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_19_result_int[0]~40"
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_20_result_int[0]~42"
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_21_result_int[0]~44"
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_22_result_int[0]~46"
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_23_result_int[0]~48"
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_24_result_int[0]~50"
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_25_result_int[0]~52"
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_26_result_int[0]~54"
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_27_result_int[0]~56"
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_28_result_int[0]~58"
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_29_result_int[0]~60"
+    Info (17048): Logic cell "lpm_divide:Div1|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_12_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Div1|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_13_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Div1|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_14_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Div1|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_15_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Div1|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_16_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Div1|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_17_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Div1|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_18_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Div1|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_19_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Div1|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_20_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Div1|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_21_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Div1|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_22_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Div1|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_23_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Div1|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_24_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Div1|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_25_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Div1|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_26_result_int[0]~10"
     Info (17048): Logic cell "lpm_divide:Div1|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_27_result_int[0]~10"
     Info (17048): Logic cell "lpm_divide:Div1|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_28_result_int[0]~10"
     Info (17048): Logic cell "lpm_divide:Div1|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_29_result_int[0]~10"
-    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|op_23~34"
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_30_result_int[0]~0"
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|op_6~22"
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|op_7~26"
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|op_8~30"
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|op_9~34"
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|op_10~38"
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_20_result_int[0]~42"
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_21_result_int[0]~44"
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_22_result_int[0]~46"
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_23_result_int[0]~48"
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_24_result_int[0]~50"
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_25_result_int[0]~52"
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_26_result_int[0]~54"
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_27_result_int[0]~56"
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_28_result_int[0]~58"
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_29_result_int[0]~60"
+    Info (17048): Logic cell "lpm_divide:Div2|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_15_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Div2|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_16_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Div2|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_17_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Div2|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_18_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Div2|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_19_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Div2|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_20_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Div2|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_21_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Div2|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_22_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Div2|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_23_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Div2|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_24_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Div2|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_25_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Div2|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_26_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Div2|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_27_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Div2|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_28_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Div2|lpm_divide_mhm:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_p5f:divider|add_sub_29_result_int[0]~10"
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_30_result_int[0]~0"
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|op_6~20"
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|op_7~26"
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|op_8~30"
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|op_9~34"
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|op_10~38"
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_20_result_int[0]~42"
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_21_result_int[0]~44"
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_22_result_int[0]~46"
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_23_result_int[0]~48"
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_24_result_int[0]~50"
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_25_result_int[0]~52"
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_26_result_int[0]~54"
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_27_result_int[0]~56"
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_28_result_int[0]~58"
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_9bm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_p8f:divider|add_sub_29_result_int[0]~60"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 783 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 10 input pins
-    Info (21059): Implemented 21 output pins
-    Info (21061): Implemented 752 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 604 megabytes
-    Info: Processing ended: Wed Apr 11 15:21:09 2018
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:07
+Info (21057): Implemented 5480 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 13 input pins
+    Info (21059): Implemented 28 output pins
+    Info (21061): Implemented 5439 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 458 megabytes
+    Info: Processing ended: Wed Apr 11 01:44:52 2018
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:19
 
 

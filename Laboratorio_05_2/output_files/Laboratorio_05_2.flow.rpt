@@ -1,6 +1,6 @@
 Flow report for Laboratorio_05_2
-Wed Apr 11 15:21:31 2018
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Wed Apr 11 01:45:16 2018
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Wed Apr 11 15:21:25 2018           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Flow Status                        ; Successful - Wed Apr 11 01:45:11 2018           ;
+; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Laboratorio_05_2                                ;
 ; Top-level Entity Name              ; Laboratorio_05_2                                ;
 ; Family                             ; Cyclone III                                     ;
 ; Device                             ; EP3C16U484C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 752 / 15,408 ( 5 % )                            ;
-;     Total combinational functions  ; 752 / 15,408 ( 5 % )                            ;
+; Total logic elements               ; 5,439 / 15,408 ( 35 % )                         ;
+;     Total combinational functions  ; 5,439 / 15,408 ( 35 % )                         ;
 ;     Dedicated logic registers      ; 0 / 15,408 ( 0 % )                              ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 31 / 347 ( 9 % )                                ;
+; Total pins                         ; 41 / 347 ( 12 % )                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 516,096 ( 0 % )                             ;
 ; Embedded Multiplier 9-bit elements ; 0 / 112 ( 0 % )                                 ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/11/2018 15:21:02 ;
+; Start date & time ; 04/11/2018 01:44:33 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Laboratorio_05_2    ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+---------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 176694087275301.152347086202884       ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 141812757117286.152342187309008       ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                  ; --            ; --          ; --         ;
@@ -93,11 +93,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:07     ; 1.0                     ; 593 MB              ; 00:00:06                           ;
-; Fitter                    ; 00:00:11     ; 1.0                     ; 815 MB              ; 00:00:10                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 469 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 510 MB              ; 00:00:03                           ;
-; Total                     ; 00:00:26     ; --                      ; --                  ; 00:00:21                           ;
+; Analysis & Synthesis      ; 00:00:18     ; 1.0                     ; 458 MB              ; 00:00:19                           ;
+; Fitter                    ; 00:00:15     ; 1.0                     ; 581 MB              ; 00:00:15                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 407 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 449 MB              ; 00:00:04                           ;
+; Total                     ; 00:00:39     ; --                      ; --                  ; 00:00:40                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -106,10 +106,10 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-GA4B68T  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; DESKTOP-GA4B68T  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; DESKTOP-GA4B68T  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-GA4B68T  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; DESKTOP-61KCDOS  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-61KCDOS  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-61KCDOS  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-61KCDOS  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
