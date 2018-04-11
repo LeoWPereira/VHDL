@@ -1,0 +1,15 @@
+|Laboratorio_01_3
+c1 => led3.IN0
+c1 => led4.IN0
+c1 => led1.IN0
+c1 => led2.IN0
+c2 => led2.IN1
+c2 => led4.IN1
+c2 => led1.IN1
+c2 => led3.IN1
+led1 <= led1.DB_MAX_OUTPUT_PORT_TYPE
+led2 <= led2.DB_MAX_OUTPUT_PORT_TYPE
+led3 <= led3.DB_MAX_OUTPUT_PORT_TYPE
+led4 <= led4.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,22 @@
+|Laboratorio_01_2
+c1 => led1.IN0
+c1 => led3.IN0
+c1 => led5.IN0
+c1 => led8.DATAIN
+c1 => led7.DATAIN
+c2 => led1.IN1
+c2 => led3.IN1
+c2 => led5.IN1
+c3 => led1.IN1
+c3 => led3.IN1
+c3 => led5.IN1
+led1 <= led1.DB_MAX_OUTPUT_PORT_TYPE
+led2 <= led1.DB_MAX_OUTPUT_PORT_TYPE
+led3 <= led3.DB_MAX_OUTPUT_PORT_TYPE
+led4 <= led3.DB_MAX_OUTPUT_PORT_TYPE
+led5 <= led5.DB_MAX_OUTPUT_PORT_TYPE
+led6 <= led5.DB_MAX_OUTPUT_PORT_TYPE
+led7 <= c1.DB_MAX_OUTPUT_PORT_TYPE
+led8 <= c1.DB_MAX_OUTPUT_PORT_TYPE
+
+
