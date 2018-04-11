@@ -1,0 +1,36 @@
+|Laboratorio_04_2
+entrada[0] => soma[1][3].OUTPUTSELECT
+entrada[0] => soma[1][2].OUTPUTSELECT
+entrada[0] => soma[1][1].OUTPUTSELECT
+entrada[0] => soma[1][0].OUTPUTSELECT
+entrada[1] => soma[2][3].OUTPUTSELECT
+entrada[1] => soma[2][2].OUTPUTSELECT
+entrada[1] => soma[2][1].OUTPUTSELECT
+entrada[1] => soma[2][0].OUTPUTSELECT
+entrada[2] => soma[3][3].OUTPUTSELECT
+entrada[2] => soma[3][2].OUTPUTSELECT
+entrada[2] => soma[3][1].OUTPUTSELECT
+entrada[2] => soma[3][0].OUTPUTSELECT
+entrada[3] => soma[4][3].OUTPUTSELECT
+entrada[3] => soma[4][2].OUTPUTSELECT
+entrada[3] => soma[4][1].OUTPUTSELECT
+entrada[3] => soma[4][0].OUTPUTSELECT
+entrada[4] => soma[5][3].OUTPUTSELECT
+entrada[4] => soma[5][2].OUTPUTSELECT
+entrada[4] => soma[5][1].OUTPUTSELECT
+entrada[4] => soma[5][0].OUTPUTSELECT
+entrada[5] => soma[6][3].OUTPUTSELECT
+entrada[5] => soma[6][2].OUTPUTSELECT
+entrada[5] => soma[6][1].OUTPUTSELECT
+entrada[5] => soma[6][0].OUTPUTSELECT
+entrada[6] => soma[7][3].OUTPUTSELECT
+entrada[6] => soma[7][2].OUTPUTSELECT
+entrada[6] => soma[7][1].OUTPUTSELECT
+entrada[6] => soma[7][0].OUTPUTSELECT
+entrada[7] => soma[8][3].OUTPUTSELECT
+entrada[7] => soma[8][2].OUTPUTSELECT
+entrada[7] => soma[8][1].OUTPUTSELECT
+entrada[7] => soma[8][0].OUTPUTSELECT
+led <= comparacao[8].DB_MAX_OUTPUT_PORT_TYPE
+
+

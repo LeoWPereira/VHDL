@@ -1,0 +1,130 @@
+LIBRARY ieee;
+
+USE ieee.std_logic_1164.ALL;
+
+USE IEEE.math_real.all;
+
+-------------------------------------
+
+ENTITY Laboratorio_04_3 IS
+
+PORT (
+
+generic (
+
+NUMERO_CHAVES : integer := 10;
+
+NUMERO_BOTOES: integer := 3;
+
+TAMANHO_HEXADECIMAL: integer := 16; 
+
+);
+
+chaves: IN STD_LOGIC_VECTOR(NUMERO_CHAVES-1 DOWNTO 0);
+
+botoes: IN STD_LOGIC_VECTOR(NUMERO_BOTOES-1 DOWNTO 0); 
+
+outSSD_MSB: OUT SSD;
+
+outSSD_LSB: OUT SSD;
+
+);
+
+END ENTITY;
+
+------------------------------------
+
+ARCHITECTURE Laboratorio_04_3 OF Laboratorio_04_3 IS
+
+
+
+signal soma_chave_1: unsigned (0 to 3);
+
+signal soma_chave_2: unsigned (0 to 3); 
+
+signal soma_chave_3: unsigned (0 to 3); 
+
+signal soma_chave_4: unsigned (0 to 3); 
+
+signal soma_chave_5: unsigned (0 to 3); 
+
+signal soma_chave_6: unsigned (0 to 3); 
+
+signal soma_chave_7: unsigned (0 to 3); 
+
+signal soma_chave_8: unsigned (0 to 3); 
+
+signal soma_chave_9: unsigned (0 to 3); 
+
+signal soma_chave_10: unsigned (0 to 3); 
+
+
+
+
+signal soma_botao_1: unsigned (0 to 3); 
+
+signal soma_botao_2: unsigned (0 to 3); 
+
+signal soma_botao_3: unsigned (0 to 3); 
+
+
+
+signal resultado: integer range 0 to 255;
+
+signal resultado_SSD_MSB: integer range 0 to 15; 
+
+signal resultado_SSD_LSB: integer range 0 to 15; 
+
+
+
+BEGIN 
+
+
+
+soma_chave_1 <= "0001" WHEN (chaves(0) = '1') ELSE "0000";
+
+soma_chave_2 <= soma_chave_1  + 1 WHEN (chaves(1) = '1') ELSE soma_chave_1 ; 
+
+soma_chave_3 <= soma_chave_2 + 1 WHEN (chaves(2) = '1') ELSE soma_chave_2;  
+
+soma_chave_4 <= soma_chave_3 + 1 WHEN (chaves(3) = '1') ELSE soma_chave_3;  
+
+soma_chave_5 <= soma_chave_4 + 1 WHEN (chaves(4) = '1') ELSE soma_chave_4;  
+
+soma_chave_6 <= soma_chave_5 + 1 WHEN (chaves(5) = '1') ELSE soma_chave_5;  
+
+soma_chave_7 <= soma_chave_6 + 1 WHEN (chaves(6) = '1') ELSE soma_chave_6;  
+
+soma_chave_8 <= soma_chave_7 + 1 WHEN (chaves(7) = '1') ELSE soma_chave_7;  
+
+soma_chave_9 <= soma_chave_8 + 1 WHEN (chaves(8) = '1') ELSE soma_chave_8;  
+
+soma_chave_10 <= soma_chave_9 + 1 WHEN (chaves(9) = '1') ELSE soma_chave_9; 
+
+
+
+
+soma_botao_1 <= "0001" WHEN (botoes(0) = '1') ELSE "0000";
+
+soma_botao_2 <=  soma_botao_1 + 1 WHEN ( botoes(1) = '1') ELSE  soma_botao_1; 
+
+soma_botao_3 <=  soma_botao_2 + 1 WHEN ( botoes(2) = '1') ELSE  soma_botao_2; 
+
+
+resultado <= ( soma_botao_3  ** 2) *  soma_chave_10;
+
+
+
+-- calcula MSB
+
+resultado_SSD_MSB <=  resultado  / TAMANHO_HEXADECIMAL;
+
+-- calcula resto (LSB)
+
+resultado_SSD_LSB <=   resultado  - (resultado_SSD_MSB  *  TAMANHO_HEXADECIMAL);
+
+ 
+
+ 
+
+END ARCHITECTURE;

@@ -1,0 +1,9 @@
+|Laboratorio_04_01
+a[0] => parry[1].IN0
+a[1] => parry[1].IN1
+a[2] => parry[2].IN1
+parry_sel => paro.IN1
+parry_sel => paro.IN1
+paro <= paro.DB_MAX_OUTPUT_PORT_TYPE
+
+
