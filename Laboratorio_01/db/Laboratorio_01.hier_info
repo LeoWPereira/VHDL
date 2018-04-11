@@ -1,0 +1,14 @@
+|Laboratorio_01
+c1 => y.IN0
+c2 => y.IN1
+c3 => y.IN1
+c4 => y.IN1
+c5 => y.IN1
+c6 => y.IN1
+c7 => y.IN1
+c8 => y.IN1
+c9 => y.IN1
+c10 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
