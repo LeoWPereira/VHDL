@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Laboratorio_05_1
-Wed Apr 11 14:39:38 2018
+Wed Apr 11 15:07:36 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -42,7 +42,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Apr 11 14:39:38 2018           ;
+; Analysis & Synthesis Status        ; Successful - Wed Apr 11 15:07:36 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Laboratorio_05_1                                ;
 ; Top-level Entity Name              ; Laboratorio_05_1                                ;
@@ -162,38 +162,39 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+-----------------+---------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                  ; Library ;
 +----------------------------------+-----------------+-----------------+---------------------------------------------------------------+---------+
+; ../share/own_library.vhd         ; yes             ; User VHDL File  ; C:/altera/13.0/Projects/share/own_library.vhd                 ;         ;
 ; Laboratorio_05_1.vhd             ; yes             ; User VHDL File  ; C:/altera/13.0/Projects/Laboratorio_05_1/Laboratorio_05_1.vhd ;         ;
 +----------------------------------+-----------------+-----------------+---------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                 ;
-+---------------------------------------------+---------------+
-; Resource                                    ; Usage         ;
-+---------------------------------------------+---------------+
-; Estimated Total logic elements              ; 47            ;
-;                                             ;               ;
-; Total combinational functions               ; 47            ;
-; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 30            ;
-;     -- 3 input functions                    ; 13            ;
-;     -- <=2 input functions                  ; 4             ;
-;                                             ;               ;
-; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 47            ;
-;     -- arithmetic mode                      ; 0             ;
-;                                             ;               ;
-; Total registers                             ; 0             ;
-;     -- Dedicated logic registers            ; 0             ;
-;     -- I/O registers                        ; 0             ;
-;                                             ;               ;
-; I/O pins                                    ; 26            ;
-; Embedded Multiplier 9-bit elements          ; 0             ;
-; Maximum fan-out node                        ; sum[13][3]~23 ;
-; Maximum fan-out                             ; 11            ;
-; Total fan-out                               ; 206           ;
-; Average fan-out                             ; 2.08          ;
-+---------------------------------------------+---------------+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimated Total logic elements              ; 47             ;
+;                                             ;                ;
+; Total combinational functions               ; 47             ;
+; Logic element usage by number of LUT inputs ;                ;
+;     -- 4 input functions                    ; 30             ;
+;     -- 3 input functions                    ; 13             ;
+;     -- <=2 input functions                  ; 4              ;
+;                                             ;                ;
+; Logic elements by mode                      ;                ;
+;     -- normal mode                          ; 47             ;
+;     -- arithmetic mode                      ; 0              ;
+;                                             ;                ;
+; Total registers                             ; 0              ;
+;     -- Dedicated logic registers            ; 0              ;
+;     -- I/O registers                        ; 0              ;
+;                                             ;                ;
+; I/O pins                                    ; 26             ;
+; Embedded Multiplier 9-bit elements          ; 0              ;
+; Maximum fan-out node                        ; soma[13][3]~23 ;
+; Maximum fan-out                             ; 11             ;
+; Total fan-out                               ; 206            ;
+; Average fan-out                             ; 2.08           ;
++---------------------------------------------+----------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -246,7 +247,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Apr 11 14:39:32 2018
+    Info: Processing started: Wed Apr 11 15:07:32 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Laboratorio_05_1 -c Laboratorio_05_1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 0 entities, in source file /altera/13.0/projects/share/own_library.vhd
@@ -263,9 +264,9 @@ Info (21057): Implemented 73 device resources after synthesis - the final resour
     Info (21059): Implemented 13 output pins
     Info (21061): Implemented 47 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 553 megabytes
-    Info: Processing ended: Wed Apr 11 14:39:38 2018
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 565 megabytes
+    Info: Processing ended: Wed Apr 11 15:07:36 2018
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
 
 

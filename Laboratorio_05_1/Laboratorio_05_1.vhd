@@ -1,8 +1,15 @@
+----------------------------------------
+
+-- Conte o número de chaves ligadas e botões apertados e acenda, em sequencia, os LEDs, baseado nessa contagem.
+
+----------------------------------------
+
 library ieee;
 
 use ieee.std_logic_1164.all;
+use work.own_library.all;
 
---
+----------------------------------------
 
 entity Laboratorio_05_1 is
 	generic (
@@ -10,29 +17,31 @@ entity Laboratorio_05_1 is
 	);
 	
 	port (
-		SW: IN STD_LOGIC_VECTOR (N-1 DOWNTO 0);
-		LED: OUT STD_LOGIC_VECTOR (N-1 DOWNTO 0)
+		botoesChaves: in STD_LOGIC_VECTOR (N-1 downto 0);
+		leds: out STD_LOGIC_VECTOR (N-1 downto 0)
 	);
 end entity;
 
---
+----------------------------------------
 
 architecture Laboratorio_05_1 of Laboratorio_05_1 IS
 	
-	TYPE SUM_ARRAY IS ARRAY (N DOWNTO 0) OF NATURAL RANGE 0 TO N;
+	type arrayInteiros is array (N downto 0) of natural range 0 to N;
 	
-	SIGNAL sum: SUM_ARRAY;
+	signal soma: arrayInteiros;
 	
 	begin
-		sum(0) <= 0;
+		soma(0) <= 0;
 		
-		SOMA: FOR i IN 1 TO N GENERATE
-			sum(i) <= sum(i-1) + 1 when SW(i-1) = '0' else
-						 sum(i-1);
-		END GENERATE SOMA;
+		SOMA_ENTRADAS: for i in 1 to N generate
+			soma(i) <= soma(i - 1) + 1 when (botoesChaves(i-1) = '0') else
+						 soma(i - 1);
+		END GENERATE SOMA_ENTRADAS;
 		
-		ACENDE_LED: FOR i IN 0 TO N-1 GENERATE
-			LED(i) <= '1' when i < sum(N) else
-						 '0';
-		END GENERATE ACENDE_LED;
+		ACENDE_LEDS: for i in 0 to (N - 1) generate
+			leds(i) <= '1' when (i < soma(N) and N < 10) else
+						  '0' when (i < soma(N) and N >= 10) else
+						  '0' when (N < 10) else
+						  '1';
+		end generate ACENDE_LEDS;
 end architecture;
