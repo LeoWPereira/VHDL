@@ -1,5 +1,10 @@
 -------------------------------------
 
+-- Construa	um	circuito	que	adicione	um	bit de paridade a	um	vetor	de	entrada de tamanho DATA_SIZE. Utilize uma	
+-- entrada como seletor	de	paridade, i.e., que configura	o circuito a definir	a paridade como par ou ímpar.
+
+-------------------------------------
+
 library ieee;
 
 use ieee.std_logic_1164.all;

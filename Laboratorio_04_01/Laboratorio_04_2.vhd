@@ -1,5 +1,9 @@
 -------------------------------------
 
+--Verifique	se	uma	sequencia	de	entrada	de	N	bits	possui 3	ou	mais	'0'	seguidos.
+
+-------------------------------------
+
 library ieee;
 
 use ieee.std_logic_1164.all;

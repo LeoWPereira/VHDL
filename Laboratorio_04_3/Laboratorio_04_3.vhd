@@ -1,3 +1,13 @@
+--------------------------------------
+
+-- Conte	o	número	de	chaves	ligadas	e	mostre	esse	valor	em	 hexa	(nos	SSDs)	e	binário	(nos	LEDs).	Utilize	os	botões	
+-- como	multiplicadores	por	2,	ou	 seja,	cada	botão	apertado	equivale	a	multiplicar	o	valor	por	2^N,	onde	N	é	o	número	
+-- de	botões	apertados	(e.g.	4	chaves	ligadas	—>	valor	=	4	/	 2	 botões	apertados	—>	2^2	=	4	/	resultado	para	
+-- aparecer	nos	LEDs	(bin)	e	SSDs	(hexa)	—>	16).
+-- Utilize	todas	as	chaves	da	placa.
+
+--------------------------------------
+
 LIBRARY ieee;
 
 USE ieee.std_logic_1164.ALL;
