@@ -16,19 +16,19 @@ end entity;
 architecture Laboratorio_06_1 of Laboratorio_06_1 IS
 	constant INTERRUPCAO_TEMPORIZADOR: natural := FREQUENCIA_CLK / 1000 * TEMPORIZACAO_MS;
 	signal temporizacao_clk: std_logic;
-	signal posicao_led: natural range 0 to NUMERO_LEDS - 1;
+	signal posicao_led:natural range 0 to NUMERO_LEDS - 1;
 begin
 
 	--Bloco - Temporizacao
 	process (clk)
-		variable contador: natural range 0 to INTERRUPCAO_TEMPORIZADOR;
+		variable counter:natural range 0 to INTERRUPCAO_TEMPORIZADOR;
 	begin 
 		if rising_edge (clk) then
-			contador := contador + 1;
+			counter := counter + 1;
 			
-			if contador = INTERRUPCAO_TEMPORIZADOR - 1 then
+			if counter = INTERRUPCAO_TEMPORIZADOR - 1 then
 				temporizacao_clk <= '1';
-				contador := 0;
+				counter := 0;
 			else 
 				temporizacao_clk <= '0';
 			end if;
@@ -48,9 +48,9 @@ begin
 	end process;
 
 	-- Bloco View
-	View: for i in 0 to NUMERO_LEDS - 1 generate
+	g1: for i in 0 to NUMERO_LEDS - 1 generate
 		leds(i) <= '1' when i = posicao_led else
 					 '0';
-	end generate View;
+	end generate g1;
 	
 end architecture;
