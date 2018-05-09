@@ -1,0 +1,35 @@
+|Laboratorio_07_1
+BTN[0] => process_1.IN1
+BTN[0] => btnState[0].DATAIN
+BTN[0] => btnValue[0].DATAIN
+BTN[1] => process_1.IN1
+BTN[1] => btnState[1].DATAIN
+BTN[1] => btnValue[1].DATAIN
+BTN[2] => process_1.IN1
+BTN[2] => btnState[2].DATAIN
+BTN[2] => btnValue[2].DATAIN
+LED[0] <= btnValue[0].DB_MAX_OUTPUT_PORT_TYPE
+LED[1] <= btnValue[1].DB_MAX_OUTPUT_PORT_TYPE
+LED[2] <= btnValue[2].DB_MAX_OUTPUT_PORT_TYPE
+CLK => clockTimer.CLK
+CLK => counter[0].CLK
+CLK => counter[1].CLK
+CLK => counter[2].CLK
+CLK => counter[3].CLK
+CLK => counter[4].CLK
+CLK => counter[5].CLK
+CLK => counter[6].CLK
+CLK => counter[7].CLK
+CLK => counter[8].CLK
+CLK => counter[9].CLK
+CLK => counter[10].CLK
+CLK => counter[11].CLK
+CLK => counter[12].CLK
+CLK => counter[13].CLK
+CLK => counter[14].CLK
+CLK => counter[15].CLK
+CLK => counter[16].CLK
+CLK => counter[17].CLK
+CLK => counter[18].CLK
+
+
