@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Laboratorio_06_02
-Wed Apr 18 15:09:40 2018
+Wed Apr 18 15:45:04 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,7 +10,17 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |Laboratorio_06_02
+ 11. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
+ 12. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
+ 13. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod1
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -36,20 +46,20 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Wed Apr 18 15:09:40 2018               ;
+; Analysis & Synthesis Status        ; Successful - Wed Apr 18 15:45:04 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Laboratorio_06_02                               ;
 ; Top-level Entity Name              ; Laboratorio_06_02                               ;
 ; Family                             ; Cyclone III                                     ;
-; Total logic elements               ; N/A until Partition Merge                       ;
-;     Total combinational functions  ; N/A until Partition Merge                       ;
-;     Dedicated logic registers      ; N/A until Partition Merge                       ;
-; Total registers                    ; N/A until Partition Merge                       ;
-; Total pins                         ; N/A until Partition Merge                       ;
-; Total virtual pins                 ; N/A until Partition Merge                       ;
-; Total memory bits                  ; N/A until Partition Merge                       ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
-; Total PLLs                         ; N/A until Partition Merge                       ;
+; Total logic elements               ; 79                                              ;
+;     Total combinational functions  ; 79                                              ;
+;     Dedicated logic registers      ; 13                                              ;
+; Total registers                    ; 13                                              ;
+; Total pins                         ; 15                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -151,23 +161,266 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                       ;
++-------------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path          ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                          ; Library ;
++-------------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------+---------+
+; ../share/own_library.vhd                  ; yes             ; User VHDL File               ; C:/altera/13.0/Projects/share/own_library.vhd                         ;         ;
+; ../Laboratorio_05_2/Laboratorio_06_02.vhd ; yes             ; User VHDL File               ; C:/altera/13.0/Projects/Laboratorio_05_2/Laboratorio_06_02.vhd        ;         ;
+; lpm_divide.tdf                            ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
+; abs_divider.inc                           ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
+; sign_div_unsign.inc                       ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
+; aglobal130.inc                            ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc      ;         ;
+; db/lpm_divide_b8m.tdf                     ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0/Projects/Laboratorio_06_02/db/lpm_divide_b8m.tdf       ;         ;
+; db/sign_div_unsign_9kh.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0/Projects/Laboratorio_06_02/db/sign_div_unsign_9kh.tdf  ;         ;
+; db/alt_u_div_t2f.tdf                      ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0/Projects/Laboratorio_06_02/db/alt_u_div_t2f.tdf        ;         ;
+; db/add_sub_unc.tdf                        ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0/Projects/Laboratorio_06_02/db/add_sub_unc.tdf          ;         ;
+; db/add_sub_vnc.tdf                        ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0/Projects/Laboratorio_06_02/db/add_sub_vnc.tdf          ;         ;
+; db/lpm_divide_7gm.tdf                     ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0/Projects/Laboratorio_06_02/db/lpm_divide_7gm.tdf       ;         ;
+; db/sign_div_unsign_8kh.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0/Projects/Laboratorio_06_02/db/sign_div_unsign_8kh.tdf  ;         ;
+; db/alt_u_div_r2f.tdf                      ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0/Projects/Laboratorio_06_02/db/alt_u_div_r2f.tdf        ;         ;
+; db/lpm_divide_9bm.tdf                     ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0/Projects/Laboratorio_06_02/db/lpm_divide_9bm.tdf       ;         ;
+; db/sign_div_unsign_7nh.tdf                ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0/Projects/Laboratorio_06_02/db/sign_div_unsign_7nh.tdf  ;         ;
+; db/alt_u_div_p8f.tdf                      ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0/Projects/Laboratorio_06_02/db/alt_u_div_p8f.tdf        ;         ;
++-------------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                                                                             ;
++---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                                                                     ;
++---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+; Estimated Total logic elements              ; 79                                                                                                                        ;
+;                                             ;                                                                                                                           ;
+; Total combinational functions               ; 79                                                                                                                        ;
+; Logic element usage by number of LUT inputs ;                                                                                                                           ;
+;     -- 4 input functions                    ; 20                                                                                                                        ;
+;     -- 3 input functions                    ; 11                                                                                                                        ;
+;     -- <=2 input functions                  ; 48                                                                                                                        ;
+;                                             ;                                                                                                                           ;
+; Logic elements by mode                      ;                                                                                                                           ;
+;     -- normal mode                          ; 55                                                                                                                        ;
+;     -- arithmetic mode                      ; 24                                                                                                                        ;
+;                                             ;                                                                                                                           ;
+; Total registers                             ; 13                                                                                                                        ;
+;     -- Dedicated logic registers            ; 13                                                                                                                        ;
+;     -- I/O registers                        ; 0                                                                                                                         ;
+;                                             ;                                                                                                                           ;
+; I/O pins                                    ; 15                                                                                                                        ;
+; Embedded Multiplier 9-bit elements          ; 0                                                                                                                         ;
+; Maximum fan-out node                        ; lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider|add_sub_3_result_int[4]~6 ;
+; Maximum fan-out                             ; 12                                                                                                                        ;
+; Total fan-out                               ; 253                                                                                                                       ;
+; Average fan-out                             ; 2.07                                                                                                                      ;
++---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                    ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                ; Library Name ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------+--------------+
+; |Laboratorio_06_02                     ; 79 (41)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 15   ; 0            ; |Laboratorio_06_02                                                                                                 ; work         ;
+;    |lpm_divide:Div0|                   ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_06_02|lpm_divide:Div0                                                                                 ; work         ;
+;       |lpm_divide_7gm:auto_generated|  ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_06_02|lpm_divide:Div0|lpm_divide_7gm:auto_generated                                                   ; work         ;
+;          |sign_div_unsign_8kh:divider| ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_06_02|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider                       ; work         ;
+;             |alt_u_div_r2f:divider|    ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_06_02|lpm_divide:Div0|lpm_divide_7gm:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_r2f:divider ; work         ;
+;    |lpm_divide:Mod0|                   ; 21 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_06_02|lpm_divide:Mod0                                                                                 ; work         ;
+;       |lpm_divide_b8m:auto_generated|  ; 21 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_06_02|lpm_divide:Mod0|lpm_divide_b8m:auto_generated                                                   ; work         ;
+;          |sign_div_unsign_9kh:divider| ; 21 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_06_02|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider                       ; work         ;
+;             |alt_u_div_t2f:divider|    ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio_06_02|lpm_divide:Mod0|lpm_divide_b8m:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_t2f:divider ; work         ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 13    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 13:1               ; 5 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |Laboratorio_06_02|ssds    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |Laboratorio_06_02 ;
++----------------+----------+-------------------------------------------------------+
+; Parameter Name ; Value    ; Type                                                  ;
++----------------+----------+-------------------------------------------------------+
+; MAX_SIZE       ; 31       ; Signed Integer                                        ;
+; FCLK           ; 50000000 ; Signed Integer                                        ;
+; TIME_MS        ; 500      ; Signed Integer                                        ;
+; BASE_NUM       ; 10       ; Signed Integer                                        ;
++----------------+----------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 5              ; Untyped                ;
+; LPM_WIDTHD             ; 5              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_b8m ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Div0 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 5              ; Untyped                ;
+; LPM_WIDTHD             ; 4              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_7gm ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod1 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 31             ; Untyped                ;
+; LPM_WIDTHD             ; 31             ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_9bm ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Apr 18 15:09:39 2018
+    Info: Processing started: Wed Apr 18 15:45:01 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Laboratorio_06_02 -c Laboratorio_06_02
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 0 entities, in source file /altera/13.0/projects/share/own_library.vhd
     Info (12022): Found design unit 1: own_library
-Error (10500): VHDL syntax error at Laboratorio_06_02.vhd(21) near text ")";  expecting an identifier, or "constant", or "file", or "signal", or "variable" File: C:/altera/13.0/Projects/Laboratorio_05_2/Laboratorio_06_02.vhd Line: 21
-Info (12021): Found 0 design units, including 0 entities, in source file /altera/13.0/projects/laboratorio_05_2/laboratorio_06_02.vhd
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 1 error, 1 warning
-    Error: Peak virtual memory: 542 megabytes
-    Error: Processing ended: Wed Apr 18 15:09:40 2018
-    Error: Elapsed time: 00:00:01
-    Error: Total CPU time (on all processors): 00:00:01
+Info (12021): Found 2 design units, including 1 entities, in source file /altera/13.0/projects/laboratorio_05_2/laboratorio_06_02.vhd
+    Info (12022): Found design unit 1: Laboratorio_06_02-Laboratorio_06_02
+    Info (12023): Found entity 1: Laboratorio_06_02
+Info (12127): Elaborating entity "Laboratorio_06_02" for the top level hierarchy
+Info (278001): Inferred 3 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod1"
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0"
+Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "5"
+    Info (12134): Parameter "LPM_WIDTHD" = "5"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_b8m.tdf
+    Info (12023): Found entity 1: lpm_divide_b8m
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_9kh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_9kh
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_t2f.tdf
+    Info (12023): Found entity 1: alt_u_div_t2f
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_unc.tdf
+    Info (12023): Found entity 1: add_sub_unc
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_vnc.tdf
+    Info (12023): Found entity 1: add_sub_vnc
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0"
+Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "5"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_7gm.tdf
+    Info (12023): Found entity 1: lpm_divide_7gm
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_8kh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_8kh
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_r2f.tdf
+    Info (12023): Found entity 1: alt_u_div_r2f
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod1"
+Info (12133): Instantiated megafunction "lpm_divide:Mod1" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "31"
+    Info (12134): Parameter "LPM_WIDTHD" = "31"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_9bm.tdf
+    Info (12023): Found entity 1: lpm_divide_9bm
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_7nh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_7nh
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_p8f.tdf
+    Info (12023): Found entity 1: alt_u_div_p8f
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "ssds[1][1]" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 97 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
+    Info (21059): Implemented 14 output pins
+    Info (21061): Implemented 82 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 575 megabytes
+    Info: Processing ended: Wed Apr 18 15:45:04 2018
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 
