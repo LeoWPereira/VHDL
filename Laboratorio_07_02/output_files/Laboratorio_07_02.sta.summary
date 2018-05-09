@@ -3,31 +3,31 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clockSpeed'
-Slack : -29.604
-TNS   : -306.693
+Slack : -28.813
+TNS   : -299.041
 
 Type  : Slow 1200mV 85C Model Setup 'CLK'
-Slack : -5.018
-TNS   : -223.686
+Slack : -4.929
+TNS   : -225.435
 
 Type  : Slow 1200mV 85C Model Setup 'debouncer:btnTailDown|result'
-Slack : -1.046
-TNS   : -3.739
+Slack : -1.355
+TNS   : -4.736
 
 Type  : Slow 1200mV 85C Model Setup 'debouncer:btnReverse|result'
 Slack : 0.318
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'CLK'
-Slack : -0.255
-TNS   : -0.361
-
-Type  : Slow 1200mV 85C Model Hold 'clockSpeed'
-Slack : 0.095
-TNS   : 0.000
+Slack : -0.180
+TNS   : -0.180
 
 Type  : Slow 1200mV 85C Model Hold 'debouncer:btnTailDown|result'
-Slack : 0.189
+Slack : 0.333
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clockSpeed'
+Slack : 0.362
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'debouncer:btnReverse|result'
@@ -51,31 +51,31 @@ Slack : -1.000
 TNS   : -1.000
 
 Type  : Slow 1200mV 0C Model Setup 'clockSpeed'
-Slack : -26.395
-TNS   : -273.027
+Slack : -25.765
+TNS   : -266.874
 
 Type  : Slow 1200mV 0C Model Setup 'CLK'
-Slack : -4.352
-TNS   : -188.182
+Slack : -4.267
+TNS   : -189.927
 
 Type  : Slow 1200mV 0C Model Setup 'debouncer:btnTailDown|result'
-Slack : -0.835
-TNS   : -2.952
+Slack : -1.147
+TNS   : -3.937
 
 Type  : Slow 1200mV 0C Model Setup 'debouncer:btnReverse|result'
 Slack : 0.398
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'CLK'
-Slack : -0.239
-TNS   : -0.339
-
-Type  : Slow 1200mV 0C Model Hold 'clockSpeed'
-Slack : 0.082
-TNS   : 0.000
+Slack : -0.163
+TNS   : -0.163
 
 Type  : Slow 1200mV 0C Model Hold 'debouncer:btnTailDown|result'
-Slack : 0.312
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clockSpeed'
+Slack : 0.321
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'debouncer:btnReverse|result'
@@ -99,31 +99,31 @@ Slack : -1.000
 TNS   : -1.000
 
 Type  : Fast 1200mV 0C Model Setup 'clockSpeed'
-Slack : -16.035
-TNS   : -164.624
+Slack : -15.604
+TNS   : -160.520
 
 Type  : Fast 1200mV 0C Model Setup 'CLK'
-Slack : -2.350
-TNS   : -86.719
+Slack : -2.366
+TNS   : -88.922
 
 Type  : Fast 1200mV 0C Model Setup 'debouncer:btnTailDown|result'
-Slack : -0.149
-TNS   : -0.425
+Slack : -0.386
+TNS   : -1.072
 
 Type  : Fast 1200mV 0C Model Setup 'debouncer:btnReverse|result'
 Slack : 0.626
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'CLK'
-Slack : -0.244
-TNS   : -0.399
-
-Type  : Fast 1200mV 0C Model Hold 'clockSpeed'
-Slack : -0.007
-TNS   : -0.013
+Slack : -0.181
+TNS   : -0.246
 
 Type  : Fast 1200mV 0C Model Hold 'debouncer:btnTailDown|result'
 Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clockSpeed'
+Slack : 0.193
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'debouncer:btnReverse|result'
@@ -132,7 +132,7 @@ TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -104.972
+TNS   : -105.030
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clockSpeed'
 Slack : -1.000

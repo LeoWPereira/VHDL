@@ -1,5 +1,5 @@
 Flow report for Laboratorio_07_02
-Wed May 09 14:46:45 2018
+Wed May 09 19:07:33 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,14 +40,14 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Wed May 09 14:46:40 2018           ;
+; Flow Status                        ; Successful - Wed May 09 19:07:23 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Laboratorio_07_02                               ;
 ; Top-level Entity Name              ; Laboratorio_07_02                               ;
 ; Family                             ; Cyclone III                                     ;
 ; Device                             ; EP3C16U484C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 883 / 15,408 ( 6 % )                            ;
+; Total logic elements               ; 884 / 15,408 ( 6 % )                            ;
 ;     Total combinational functions  ; 876 / 15,408 ( 6 % )                            ;
 ;     Dedicated logic registers      ; 116 / 15,408 ( < 1 % )                          ;
 ; Total registers                    ; 116                                             ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/09/2018 14:46:22 ;
+; Start date & time ; 05/09/2018 19:07:01 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Laboratorio_07_02   ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 141812757117286.152588798202244        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 176694087275301.152590362101516        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; 16764057                               ; --            ; --          ; Top        ;
@@ -93,11 +93,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 548 MB              ; 00:00:03                           ;
-; Fitter                    ; 00:00:10     ; 1.0                     ; 775 MB              ; 00:00:10                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 462 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 511 MB              ; 00:00:04                           ;
-; Total                     ; 00:00:18     ; --                      ; --                  ; 00:00:18                           ;
+; Analysis & Synthesis      ; 00:00:05     ; 1.0                     ; 558 MB              ; 00:00:04                           ;
+; Fitter                    ; 00:00:12     ; 1.0                     ; 839 MB              ; 00:00:11                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 469 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:09     ; 1.0                     ; 526 MB              ; 00:00:05                           ;
+; Total                     ; 00:00:27     ; --                      ; --                  ; 00:00:21                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -106,10 +106,10 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-61KCDOS  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; DESKTOP-61KCDOS  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; DESKTOP-61KCDOS  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-61KCDOS  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; DESKTOP-GA4B68T  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-GA4B68T  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-GA4B68T  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-GA4B68T  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
