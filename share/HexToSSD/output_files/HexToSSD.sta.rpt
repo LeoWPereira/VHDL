@@ -1,0 +1,823 @@
+TimeQuest Timing Analyzer report for HexToSSD
+Wed May 09 18:18:46 2018
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1200mV 85C Model Setup Summary
+  8. Slow 1200mV 85C Model Hold Summary
+  9. Slow 1200mV 85C Model Recovery Summary
+ 10. Slow 1200mV 85C Model Removal Summary
+ 11. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 12. Propagation Delay
+ 13. Minimum Propagation Delay
+ 14. Slow 1200mV 85C Model Metastability Report
+ 15. Slow 1200mV 0C Model Fmax Summary
+ 16. Slow 1200mV 0C Model Setup Summary
+ 17. Slow 1200mV 0C Model Hold Summary
+ 18. Slow 1200mV 0C Model Recovery Summary
+ 19. Slow 1200mV 0C Model Removal Summary
+ 20. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 21. Propagation Delay
+ 22. Minimum Propagation Delay
+ 23. Slow 1200mV 0C Model Metastability Report
+ 24. Fast 1200mV 0C Model Setup Summary
+ 25. Fast 1200mV 0C Model Hold Summary
+ 26. Fast 1200mV 0C Model Recovery Summary
+ 27. Fast 1200mV 0C Model Removal Summary
+ 28. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 29. Propagation Delay
+ 30. Minimum Propagation Delay
+ 31. Fast 1200mV 0C Model Metastability Report
+ 32. Multicorner Timing Analysis Summary
+ 33. Progagation Delay
+ 34. Minimum Progagation Delay
+ 35. Board Trace Model Assignments
+ 36. Input Transition Times
+ 37. Slow Corner Signal Integrity Metrics
+ 38. Fast Corner Signal Integrity Metrics
+ 39. Clock Transfers
+ 40. Report TCCS
+ 41. Report RSKM
+ 42. Unconstrained Paths
+ 43. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; HexToSSD                                                          ;
+; Device Family      ; Cyclone III                                                       ;
+; Device Name        ; EP3C16U484C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Enabled                                                           ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+--------------------------------------
+; Slow 1200mV 85C Model Fmax Summary ;
+--------------------------------------
+No paths to report.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
+---------------------------------------
+; Slow 1200mV 85C Model Setup Summary ;
+---------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1200mV 85C Model Hold Summary ;
+--------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow 1200mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
+-----------------------------------------------------
+; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
+-----------------------------------------------------
+No paths to report.
+
+
++-----------------------------------------------------------+
+; Propagation Delay                                         ;
++-------------+-------------+-------+-------+-------+-------+
+; Input Port  ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++-------------+-------------+-------+-------+-------+-------+
+; numValue[0] ; ssds[0][0]  ; 6.567 ; 6.562 ; 6.968 ; 6.998 ;
+; numValue[0] ; ssds[0][1]  ; 6.202 ; 6.154 ; 6.602 ; 6.586 ;
+; numValue[0] ; ssds[0][2]  ;       ; 6.270 ; 6.689 ;       ;
+; numValue[0] ; ssds[0][3]  ; 7.006 ; 6.923 ; 7.409 ; 7.358 ;
+; numValue[0] ; ssds[0][4]  ; 6.270 ;       ;       ; 6.685 ;
+; numValue[0] ; ssds[0][5]  ; 6.859 ;       ;       ; 7.226 ;
+; numValue[0] ; ssds[0][6]  ; 6.835 ; 6.829 ; 7.273 ; 7.234 ;
+; numValue[1] ; ssds[0][0]  ; 9.329 ; 9.271 ; 9.498 ; 9.483 ;
+; numValue[1] ; ssds[0][1]  ; 8.947 ; 8.922 ; 9.116 ; 9.091 ;
+; numValue[1] ; ssds[0][2]  ; 8.951 ; 9.017 ; 9.167 ; 9.186 ;
+; numValue[1] ; ssds[0][3]  ; 9.772 ; 9.677 ; 9.941 ; 9.846 ;
+; numValue[1] ; ssds[0][4]  ; 9.035 ; 8.960 ; 9.204 ; 9.172 ;
+; numValue[1] ; ssds[0][5]  ; 9.574 ; 9.545 ; 9.765 ; 9.714 ;
+; numValue[1] ; ssds[0][6]  ; 9.592 ; 9.580 ; 9.761 ; 9.749 ;
+; numValue[1] ; ssds[1][0]  ; 7.795 ;       ;       ; 8.107 ;
+; numValue[1] ; ssds[1][3]  ; 7.631 ;       ;       ; 7.909 ;
+; numValue[1] ; ssds[1][4]  ; 7.641 ;       ;       ; 7.919 ;
+; numValue[1] ; ssds[1][5]  ; 8.151 ;       ;       ; 8.487 ;
+; numValue[2] ; ssds[0][0]  ; 8.636 ; 8.578 ; 9.019 ; 9.004 ;
+; numValue[2] ; ssds[0][1]  ; 8.254 ; 8.229 ; 8.637 ; 8.612 ;
+; numValue[2] ; ssds[0][2]  ; 8.258 ; 8.324 ; 8.684 ; 8.707 ;
+; numValue[2] ; ssds[0][3]  ; 9.079 ; 8.984 ; 9.462 ; 9.367 ;
+; numValue[2] ; ssds[0][4]  ; 8.342 ; 8.267 ; 8.725 ; 8.693 ;
+; numValue[2] ; ssds[0][5]  ; 8.881 ; 8.852 ; 9.264 ; 9.235 ;
+; numValue[2] ; ssds[0][6]  ; 8.899 ; 8.887 ; 9.282 ; 9.270 ;
+; numValue[2] ; ssds[1][0]  ; 7.100 ;       ;       ; 7.629 ;
+; numValue[2] ; ssds[1][3]  ; 6.936 ;       ;       ; 7.431 ;
+; numValue[2] ; ssds[1][4]  ; 6.946 ;       ;       ; 7.441 ;
+; numValue[2] ; ssds[1][5]  ; 7.456 ;       ;       ; 8.009 ;
+; numValue[3] ; ssds[0][0]  ; 8.692 ; 8.634 ; 8.836 ; 8.821 ;
+; numValue[3] ; ssds[0][1]  ; 8.310 ; 8.285 ; 8.454 ; 8.429 ;
+; numValue[3] ; ssds[0][2]  ; 8.314 ; 8.380 ; 8.501 ; 8.524 ;
+; numValue[3] ; ssds[0][3]  ; 9.135 ; 9.040 ; 9.279 ; 9.184 ;
+; numValue[3] ; ssds[0][4]  ; 8.398 ; 8.323 ; 8.542 ; 8.510 ;
+; numValue[3] ; ssds[0][5]  ; 8.937 ; 8.908 ; 9.081 ; 9.052 ;
+; numValue[3] ; ssds[0][6]  ; 8.955 ; 8.943 ; 9.099 ; 9.087 ;
+; numValue[3] ; ssds[1][0]  ; 7.158 ;       ;       ; 7.448 ;
+; numValue[3] ; ssds[1][3]  ; 6.994 ;       ;       ; 7.250 ;
+; numValue[3] ; ssds[1][4]  ; 7.004 ;       ;       ; 7.260 ;
+; numValue[3] ; ssds[1][5]  ; 7.514 ;       ;       ; 7.828 ;
++-------------+-------------+-------+-------+-------+-------+
+
+
++-----------------------------------------------------------+
+; Minimum Propagation Delay                                 ;
++-------------+-------------+-------+-------+-------+-------+
+; Input Port  ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++-------------+-------------+-------+-------+-------+-------+
+; numValue[0] ; ssds[0][0]  ; 6.415 ; 6.411 ; 6.807 ; 6.833 ;
+; numValue[0] ; ssds[0][1]  ; 6.059 ; 6.011 ; 6.450 ; 6.433 ;
+; numValue[0] ; ssds[0][2]  ;       ; 6.128 ; 6.536 ;       ;
+; numValue[0] ; ssds[0][3]  ; 6.829 ; 6.747 ; 7.222 ; 7.171 ;
+; numValue[0] ; ssds[0][4]  ; 6.129 ;       ;       ; 6.533 ;
+; numValue[0] ; ssds[0][5]  ; 6.688 ;       ;       ; 7.045 ;
+; numValue[0] ; ssds[0][6]  ; 6.672 ; 6.666 ; 7.097 ; 7.060 ;
+; numValue[1] ; ssds[0][0]  ; 7.642 ; 7.674 ; 8.138 ; 8.104 ;
+; numValue[1] ; ssds[0][1]  ; 7.274 ; 7.315 ; 7.812 ; 7.703 ;
+; numValue[1] ; ssds[0][2]  ; 7.376 ; 7.820 ; 8.185 ; 7.857 ;
+; numValue[1] ; ssds[0][3]  ; 8.045 ; 7.986 ; 8.535 ; 8.450 ;
+; numValue[1] ; ssds[0][4]  ; 7.796 ; 7.349 ; 7.833 ; 8.158 ;
+; numValue[1] ; ssds[0][5]  ; 7.937 ; 7.884 ; 8.411 ; 8.379 ;
+; numValue[1] ; ssds[0][6]  ; 7.976 ; 7.880 ; 8.393 ; 8.422 ;
+; numValue[1] ; ssds[1][0]  ; 7.336 ;       ;       ; 7.796 ;
+; numValue[1] ; ssds[1][3]  ; 7.179 ;       ;       ; 7.605 ;
+; numValue[1] ; ssds[1][4]  ; 7.189 ;       ;       ; 7.615 ;
+; numValue[1] ; ssds[1][5]  ; 7.678 ;       ;       ; 8.160 ;
+; numValue[2] ; ssds[0][0]  ; 7.188 ; 7.222 ; 7.667 ; 7.624 ;
+; numValue[2] ; ssds[0][1]  ; 6.821 ; 7.277 ; 7.699 ; 7.227 ;
+; numValue[2] ; ssds[0][2]  ; 6.908 ; 6.949 ; 7.419 ; 7.361 ;
+; numValue[2] ; ssds[0][3]  ; 7.596 ; 7.539 ; 8.056 ; 7.989 ;
+; numValue[2] ; ssds[0][4]  ; 6.958 ; 6.903 ; 7.356 ; 7.393 ;
+; numValue[2] ; ssds[0][5]  ; 7.462 ; 7.449 ; 7.945 ; 7.837 ;
+; numValue[2] ; ssds[0][6]  ; 7.463 ; 7.476 ; 7.920 ; 7.886 ;
+; numValue[2] ; ssds[1][0]  ; 6.797 ;       ;       ; 7.231 ;
+; numValue[2] ; ssds[1][3]  ; 6.640 ;       ;       ; 7.040 ;
+; numValue[2] ; ssds[1][4]  ; 6.650 ;       ;       ; 7.050 ;
+; numValue[2] ; ssds[1][5]  ; 7.139 ;       ;       ; 7.595 ;
+; numValue[3] ; ssds[0][0]  ; 7.026 ; 7.024 ; 7.445 ; 7.434 ;
+; numValue[3] ; ssds[0][1]  ; 6.671 ; 6.625 ; 7.096 ; 7.041 ;
+; numValue[3] ; ssds[0][2]  ; 6.726 ; 6.744 ; 7.141 ; 7.168 ;
+; numValue[3] ; ssds[0][3]  ; 7.441 ; 7.361 ; 7.864 ; 7.775 ;
+; numValue[3] ; ssds[0][4]  ; 7.218 ; 6.724 ; 7.167 ; 7.542 ;
+; numValue[3] ; ssds[0][5]  ; 7.297 ; 7.233 ; 7.725 ; 7.652 ;
+; numValue[3] ; ssds[0][6]  ; 7.286 ; 7.278 ; 7.696 ; 7.697 ;
+; numValue[3] ; ssds[1][0]  ; 6.725 ;       ;       ; 7.170 ;
+; numValue[3] ; ssds[1][3]  ; 6.568 ;       ;       ; 6.979 ;
+; numValue[3] ; ssds[1][4]  ; 6.578 ;       ;       ; 6.989 ;
+; numValue[3] ; ssds[1][5]  ; 7.067 ;       ;       ; 7.534 ;
++-------------+-------------+-------+-------+-------+-------+
+
+
+----------------------------------------------
+; Slow 1200mV 85C Model Metastability Report ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
+-------------------------------------
+; Slow 1200mV 0C Model Fmax Summary ;
+-------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1200mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Slow 1200mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
+----------------------------------------------------
+; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
+----------------------------------------------------
+No paths to report.
+
+
++-----------------------------------------------------------+
+; Propagation Delay                                         ;
++-------------+-------------+-------+-------+-------+-------+
+; Input Port  ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++-------------+-------------+-------+-------+-------+-------+
+; numValue[0] ; ssds[0][0]  ; 6.097 ; 6.064 ; 6.447 ; 6.445 ;
+; numValue[0] ; ssds[0][1]  ; 5.757 ; 5.696 ; 6.110 ; 6.078 ;
+; numValue[0] ; ssds[0][2]  ;       ; 5.827 ; 6.175 ;       ;
+; numValue[0] ; ssds[0][3]  ; 6.500 ; 6.370 ; 6.855 ; 6.754 ;
+; numValue[0] ; ssds[0][4]  ; 5.827 ;       ;       ; 6.174 ;
+; numValue[0] ; ssds[0][5]  ; 6.358 ;       ;       ; 6.653 ;
+; numValue[0] ; ssds[0][6]  ; 6.308 ; 6.339 ; 6.687 ; 6.689 ;
+; numValue[1] ; ssds[0][0]  ; 8.563 ; 8.496 ; 8.682 ; 8.661 ;
+; numValue[1] ; ssds[0][1]  ; 8.208 ; 8.167 ; 8.327 ; 8.286 ;
+; numValue[1] ; ssds[0][2]  ; 8.218 ; 8.273 ; 8.383 ; 8.392 ;
+; numValue[1] ; ssds[0][3]  ; 8.969 ; 8.831 ; 9.088 ; 8.967 ;
+; numValue[1] ; ssds[0][4]  ; 8.291 ; 8.225 ; 8.410 ; 8.390 ;
+; numValue[1] ; ssds[0][5]  ; 8.782 ; 8.728 ; 8.923 ; 8.847 ;
+; numValue[1] ; ssds[0][6]  ; 8.768 ; 8.795 ; 8.900 ; 8.914 ;
+; numValue[1] ; ssds[1][0]  ; 7.180 ;       ;       ; 7.432 ;
+; numValue[1] ; ssds[1][3]  ; 7.012 ;       ;       ; 7.250 ;
+; numValue[1] ; ssds[1][4]  ; 7.022 ;       ;       ; 7.260 ;
+; numValue[1] ; ssds[1][5]  ; 7.501 ;       ;       ; 7.789 ;
+; numValue[2] ; ssds[0][0]  ; 7.938 ; 7.871 ; 8.268 ; 8.247 ;
+; numValue[2] ; ssds[0][1]  ; 7.583 ; 7.542 ; 7.913 ; 7.872 ;
+; numValue[2] ; ssds[0][2]  ; 7.593 ; 7.648 ; 7.969 ; 7.978 ;
+; numValue[2] ; ssds[0][3]  ; 8.344 ; 8.206 ; 8.674 ; 8.553 ;
+; numValue[2] ; ssds[0][4]  ; 7.666 ; 7.600 ; 7.996 ; 7.976 ;
+; numValue[2] ; ssds[0][5]  ; 8.157 ; 8.103 ; 8.509 ; 8.433 ;
+; numValue[2] ; ssds[0][6]  ; 8.143 ; 8.170 ; 8.486 ; 8.500 ;
+; numValue[2] ; ssds[1][0]  ; 6.553 ;       ;       ; 7.017 ;
+; numValue[2] ; ssds[1][3]  ; 6.385 ;       ;       ; 6.835 ;
+; numValue[2] ; ssds[1][4]  ; 6.395 ;       ;       ; 6.845 ;
+; numValue[2] ; ssds[1][5]  ; 6.874 ;       ;       ; 7.374 ;
+; numValue[3] ; ssds[0][0]  ; 7.979 ; 7.912 ; 8.111 ; 8.090 ;
+; numValue[3] ; ssds[0][1]  ; 7.624 ; 7.583 ; 7.756 ; 7.715 ;
+; numValue[3] ; ssds[0][2]  ; 7.634 ; 7.689 ; 7.812 ; 7.821 ;
+; numValue[3] ; ssds[0][3]  ; 8.385 ; 8.247 ; 8.517 ; 8.396 ;
+; numValue[3] ; ssds[0][4]  ; 7.707 ; 7.641 ; 7.839 ; 7.819 ;
+; numValue[3] ; ssds[0][5]  ; 8.198 ; 8.144 ; 8.352 ; 8.276 ;
+; numValue[3] ; ssds[0][6]  ; 8.184 ; 8.211 ; 8.329 ; 8.343 ;
+; numValue[3] ; ssds[1][0]  ; 6.595 ;       ;       ; 6.861 ;
+; numValue[3] ; ssds[1][3]  ; 6.427 ;       ;       ; 6.679 ;
+; numValue[3] ; ssds[1][4]  ; 6.437 ;       ;       ; 6.689 ;
+; numValue[3] ; ssds[1][5]  ; 6.916 ;       ;       ; 7.218 ;
++-------------+-------------+-------+-------+-------+-------+
+
+
++-----------------------------------------------------------+
+; Minimum Propagation Delay                                 ;
++-------------+-------------+-------+-------+-------+-------+
+; Input Port  ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++-------------+-------------+-------+-------+-------+-------+
+; numValue[0] ; ssds[0][0]  ; 5.966 ; 5.935 ; 6.309 ; 6.305 ;
+; numValue[0] ; ssds[0][1]  ; 5.635 ; 5.574 ; 5.980 ; 5.947 ;
+; numValue[0] ; ssds[0][2]  ;       ; 5.706 ; 6.045 ;       ;
+; numValue[0] ; ssds[0][3]  ; 6.347 ; 6.219 ; 6.694 ; 6.594 ;
+; numValue[0] ; ssds[0][4]  ; 5.706 ;       ;       ; 6.044 ;
+; numValue[0] ; ssds[0][5]  ; 6.211 ;       ;       ; 6.497 ;
+; numValue[0] ; ssds[0][6]  ; 6.169 ; 6.199 ; 6.538 ; 6.540 ;
+; numValue[1] ; ssds[0][0]  ; 7.098 ; 7.098 ; 7.487 ; 7.430 ;
+; numValue[1] ; ssds[0][1]  ; 6.752 ; 6.773 ; 7.182 ; 7.066 ;
+; numValue[1] ; ssds[0][2]  ; 6.836 ; 7.234 ; 7.521 ; 7.228 ;
+; numValue[1] ; ssds[0][3]  ; 7.466 ; 7.364 ; 7.852 ; 7.722 ;
+; numValue[1] ; ssds[0][4]  ; 7.212 ; 6.817 ; 7.206 ; 7.502 ;
+; numValue[1] ; ssds[0][5]  ; 7.359 ; 7.284 ; 7.732 ; 7.675 ;
+; numValue[1] ; ssds[0][6]  ; 7.367 ; 7.314 ; 7.686 ; 7.748 ;
+; numValue[1] ; ssds[1][0]  ; 6.785 ;       ;       ; 7.163 ;
+; numValue[1] ; ssds[1][3]  ; 6.624 ;       ;       ; 6.988 ;
+; numValue[1] ; ssds[1][4]  ; 6.634 ;       ;       ; 6.998 ;
+; numValue[1] ; ssds[1][5]  ; 7.094 ;       ;       ; 7.505 ;
+; numValue[2] ; ssds[0][0]  ; 6.679 ; 6.682 ; 7.063 ; 6.999 ;
+; numValue[2] ; ssds[0][1]  ; 6.333 ; 6.731 ; 7.106 ; 6.639 ;
+; numValue[2] ; ssds[0][2]  ; 6.406 ; 6.453 ; 6.820 ; 6.782 ;
+; numValue[2] ; ssds[0][3]  ; 7.051 ; 6.950 ; 7.422 ; 7.309 ;
+; numValue[2] ; ssds[0][4]  ; 6.464 ; 6.404 ; 6.781 ; 6.800 ;
+; numValue[2] ; ssds[0][5]  ; 6.925 ; 6.886 ; 7.316 ; 7.189 ;
+; numValue[2] ; ssds[0][6]  ; 6.896 ; 6.942 ; 7.263 ; 7.263 ;
+; numValue[2] ; ssds[1][0]  ; 6.290 ;       ;       ; 6.677 ;
+; numValue[2] ; ssds[1][3]  ; 6.129 ;       ;       ; 6.502 ;
+; numValue[2] ; ssds[1][4]  ; 6.139 ;       ;       ; 6.512 ;
+; numValue[2] ; ssds[1][5]  ; 6.599 ;       ;       ; 7.019 ;
+; numValue[3] ; ssds[0][0]  ; 6.530 ; 6.501 ; 6.877 ; 6.842 ;
+; numValue[3] ; ssds[0][1]  ; 6.199 ; 6.140 ; 6.545 ; 6.480 ;
+; numValue[3] ; ssds[0][2]  ; 6.238 ; 6.269 ; 6.579 ; 6.616 ;
+; numValue[3] ; ssds[0][3]  ; 6.912 ; 6.786 ; 7.259 ; 7.127 ;
+; numValue[3] ; ssds[0][4]  ; 6.678 ; 6.239 ; 6.616 ; 6.964 ;
+; numValue[3] ; ssds[0][5]  ; 6.773 ; 6.686 ; 7.123 ; 7.030 ;
+; numValue[3] ; ssds[0][6]  ; 6.734 ; 6.762 ; 7.074 ; 7.108 ;
+; numValue[3] ; ssds[1][0]  ; 6.224 ;       ;       ; 6.619 ;
+; numValue[3] ; ssds[1][3]  ; 6.063 ;       ;       ; 6.444 ;
+; numValue[3] ; ssds[1][4]  ; 6.073 ;       ;       ; 6.454 ;
+; numValue[3] ; ssds[1][5]  ; 6.533 ;       ;       ; 6.961 ;
++-------------+-------------+-------+-------+-------+-------+
+
+
+---------------------------------------------
+; Slow 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
+--------------------------------------
+; Fast 1200mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Fast 1200mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Fast 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
+----------------------------------------------------
+; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
+----------------------------------------------------
+No paths to report.
+
+
++-----------------------------------------------------------+
+; Propagation Delay                                         ;
++-------------+-------------+-------+-------+-------+-------+
+; Input Port  ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++-------------+-------------+-------+-------+-------+-------+
+; numValue[0] ; ssds[0][0]  ; 3.927 ; 3.943 ; 4.485 ; 4.520 ;
+; numValue[0] ; ssds[0][1]  ; 3.639 ; 3.675 ; 4.196 ; 4.250 ;
+; numValue[0] ; ssds[0][2]  ;       ; 3.740 ; 4.315 ;       ;
+; numValue[0] ; ssds[0][3]  ; 4.073 ; 4.124 ; 4.632 ; 4.701 ;
+; numValue[0] ; ssds[0][4]  ; 3.738 ;       ;       ; 4.311 ;
+; numValue[0] ; ssds[0][5]  ; 4.010 ;       ;       ; 4.643 ;
+; numValue[0] ; ssds[0][6]  ; 4.109 ; 4.068 ; 4.687 ; 4.627 ;
+; numValue[1] ; ssds[0][0]  ; 5.513 ; 5.479 ; 5.956 ; 5.941 ;
+; numValue[1] ; ssds[0][1]  ; 5.216 ; 5.256 ; 5.659 ; 5.699 ;
+; numValue[1] ; ssds[0][2]  ; 5.244 ; 5.311 ; 5.757 ; 5.754 ;
+; numValue[1] ; ssds[0][3]  ; 5.660 ; 5.696 ; 6.103 ; 6.139 ;
+; numValue[1] ; ssds[0][4]  ; 5.322 ; 5.237 ; 5.765 ; 5.741 ;
+; numValue[1] ; ssds[0][5]  ; 5.568 ; 5.635 ; 6.030 ; 6.078 ;
+; numValue[1] ; ssds[0][6]  ; 5.682 ; 5.647 ; 6.125 ; 6.090 ;
+; numValue[1] ; ssds[1][0]  ; 4.626 ;       ;       ; 5.060 ;
+; numValue[1] ; ssds[1][3]  ; 4.523 ;       ;       ; 4.965 ;
+; numValue[1] ; ssds[1][4]  ; 4.533 ;       ;       ; 4.975 ;
+; numValue[1] ; ssds[1][5]  ; 4.847 ;       ;       ; 5.271 ;
+; numValue[2] ; ssds[0][0]  ; 5.122 ; 5.088 ; 5.655 ; 5.621 ;
+; numValue[2] ; ssds[0][1]  ; 4.825 ; 4.865 ; 5.358 ; 5.398 ;
+; numValue[2] ; ssds[0][2]  ; 4.837 ; 4.920 ; 5.390 ; 5.453 ;
+; numValue[2] ; ssds[0][3]  ; 5.269 ; 5.305 ; 5.802 ; 5.838 ;
+; numValue[2] ; ssds[0][4]  ; 4.931 ; 4.846 ; 5.464 ; 5.399 ;
+; numValue[2] ; ssds[0][5]  ; 5.177 ; 5.244 ; 5.710 ; 5.777 ;
+; numValue[2] ; ssds[0][6]  ; 5.291 ; 5.256 ; 5.824 ; 5.789 ;
+; numValue[2] ; ssds[1][0]  ; 4.234 ;       ;       ; 4.758 ;
+; numValue[2] ; ssds[1][3]  ; 4.131 ;       ;       ; 4.663 ;
+; numValue[2] ; ssds[1][4]  ; 4.141 ;       ;       ; 4.673 ;
+; numValue[2] ; ssds[1][5]  ; 4.455 ;       ;       ; 4.969 ;
+; numValue[3] ; ssds[0][0]  ; 5.138 ; 5.104 ; 5.540 ; 5.506 ;
+; numValue[3] ; ssds[0][1]  ; 4.841 ; 4.881 ; 5.243 ; 5.283 ;
+; numValue[3] ; ssds[0][2]  ; 4.853 ; 4.936 ; 5.275 ; 5.338 ;
+; numValue[3] ; ssds[0][3]  ; 5.285 ; 5.321 ; 5.687 ; 5.723 ;
+; numValue[3] ; ssds[0][4]  ; 4.947 ; 4.862 ; 5.349 ; 5.284 ;
+; numValue[3] ; ssds[0][5]  ; 5.193 ; 5.260 ; 5.595 ; 5.662 ;
+; numValue[3] ; ssds[0][6]  ; 5.307 ; 5.272 ; 5.709 ; 5.674 ;
+; numValue[3] ; ssds[1][0]  ; 4.252 ;       ;       ; 4.646 ;
+; numValue[3] ; ssds[1][3]  ; 4.149 ;       ;       ; 4.551 ;
+; numValue[3] ; ssds[1][4]  ; 4.159 ;       ;       ; 4.561 ;
+; numValue[3] ; ssds[1][5]  ; 4.473 ;       ;       ; 4.857 ;
++-------------+-------------+-------+-------+-------+-------+
+
+
++-----------------------------------------------------------+
+; Minimum Propagation Delay                                 ;
++-------------+-------------+-------+-------+-------+-------+
+; Input Port  ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++-------------+-------------+-------+-------+-------+-------+
+; numValue[0] ; ssds[0][0]  ; 3.838 ; 3.853 ; 4.391 ; 4.425 ;
+; numValue[0] ; ssds[0][1]  ; 3.556 ; 3.591 ; 4.106 ; 4.161 ;
+; numValue[0] ; ssds[0][2]  ;       ; 3.659 ; 4.226 ;       ;
+; numValue[0] ; ssds[0][3]  ; 3.971 ; 4.019 ; 4.524 ; 4.592 ;
+; numValue[0] ; ssds[0][4]  ; 3.657 ;       ;       ; 4.223 ;
+; numValue[0] ; ssds[0][5]  ; 3.912 ;       ;       ; 4.535 ;
+; numValue[0] ; ssds[0][6]  ; 4.012 ; 3.973 ; 4.584 ; 4.526 ;
+; numValue[1] ; ssds[0][0]  ; 4.516 ; 4.550 ; 5.196 ; 5.189 ;
+; numValue[1] ; ssds[0][1]  ; 4.228 ; 4.310 ; 4.930 ; 4.926 ;
+; numValue[1] ; ssds[0][2]  ; 4.353 ; 4.642 ; 5.143 ; 5.016 ;
+; numValue[1] ; ssds[0][3]  ; 4.643 ; 4.701 ; 5.316 ; 5.358 ;
+; numValue[1] ; ssds[0][4]  ; 4.630 ; 4.335 ; 4.999 ; 5.125 ;
+; numValue[1] ; ssds[0][5]  ; 4.604 ; 4.660 ; 5.268 ; 5.332 ;
+; numValue[1] ; ssds[0][6]  ; 4.730 ; 4.643 ; 5.363 ; 5.348 ;
+; numValue[1] ; ssds[1][0]  ; 4.372 ;       ;       ; 4.883 ;
+; numValue[1] ; ssds[1][3]  ; 4.274 ;       ;       ; 4.793 ;
+; numValue[1] ; ssds[1][4]  ; 4.284 ;       ;       ; 4.803 ;
+; numValue[1] ; ssds[1][5]  ; 4.585 ;       ;       ; 5.086 ;
+; numValue[2] ; ssds[0][0]  ; 4.261 ; 4.295 ; 4.901 ; 4.888 ;
+; numValue[2] ; ssds[0][1]  ; 3.971 ; 4.273 ; 4.773 ; 4.624 ;
+; numValue[2] ; ssds[0][2]  ; 4.091 ; 4.110 ; 4.744 ; 4.704 ;
+; numValue[2] ; ssds[0][3]  ; 4.390 ; 4.450 ; 5.013 ; 5.072 ;
+; numValue[2] ; ssds[0][4]  ; 4.113 ; 4.088 ; 4.703 ; 4.729 ;
+; numValue[2] ; ssds[0][5]  ; 4.336 ; 4.413 ; 4.974 ; 4.997 ;
+; numValue[2] ; ssds[0][6]  ; 4.438 ; 4.413 ; 5.063 ; 5.009 ;
+; numValue[2] ; ssds[1][0]  ; 4.065 ;       ;       ; 4.535 ;
+; numValue[2] ; ssds[1][3]  ; 3.967 ;       ;       ; 4.445 ;
+; numValue[2] ; ssds[1][4]  ; 3.977 ;       ;       ; 4.455 ;
+; numValue[2] ; ssds[1][5]  ; 4.278 ;       ;       ; 4.738 ;
+; numValue[3] ; ssds[0][0]  ; 4.151 ; 4.171 ; 4.768 ; 4.781 ;
+; numValue[3] ; ssds[0][1]  ; 3.870 ; 3.910 ; 4.487 ; 4.520 ;
+; numValue[3] ; ssds[0][2]  ; 3.974 ; 3.972 ; 4.584 ; 4.589 ;
+; numValue[3] ; ssds[0][3]  ; 4.284 ; 4.337 ; 4.901 ; 4.947 ;
+; numValue[3] ; ssds[0][4]  ; 4.279 ; 3.973 ; 4.588 ; 4.748 ;
+; numValue[3] ; ssds[0][5]  ; 4.225 ; 4.281 ; 4.842 ; 4.891 ;
+; numValue[3] ; ssds[0][6]  ; 4.329 ; 4.285 ; 4.940 ; 4.903 ;
+; numValue[3] ; ssds[1][0]  ; 4.011 ;       ;       ; 4.489 ;
+; numValue[3] ; ssds[1][3]  ; 3.913 ;       ;       ; 4.399 ;
+; numValue[3] ; ssds[1][4]  ; 3.923 ;       ;       ; 4.409 ;
+; numValue[3] ; ssds[1][5]  ; 4.224 ;       ;       ; 4.692 ;
++-------------+-------------+-------+-------+-------+-------+
+
+
+---------------------------------------------
+; Fast 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------+
+; Progagation Delay                                         ;
++-------------+-------------+-------+-------+-------+-------+
+; Input Port  ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++-------------+-------------+-------+-------+-------+-------+
+; numValue[0] ; ssds[0][0]  ; 6.567 ; 6.562 ; 6.968 ; 6.998 ;
+; numValue[0] ; ssds[0][1]  ; 6.202 ; 6.154 ; 6.602 ; 6.586 ;
+; numValue[0] ; ssds[0][2]  ;       ; 6.270 ; 6.689 ;       ;
+; numValue[0] ; ssds[0][3]  ; 7.006 ; 6.923 ; 7.409 ; 7.358 ;
+; numValue[0] ; ssds[0][4]  ; 6.270 ;       ;       ; 6.685 ;
+; numValue[0] ; ssds[0][5]  ; 6.859 ;       ;       ; 7.226 ;
+; numValue[0] ; ssds[0][6]  ; 6.835 ; 6.829 ; 7.273 ; 7.234 ;
+; numValue[1] ; ssds[0][0]  ; 9.329 ; 9.271 ; 9.498 ; 9.483 ;
+; numValue[1] ; ssds[0][1]  ; 8.947 ; 8.922 ; 9.116 ; 9.091 ;
+; numValue[1] ; ssds[0][2]  ; 8.951 ; 9.017 ; 9.167 ; 9.186 ;
+; numValue[1] ; ssds[0][3]  ; 9.772 ; 9.677 ; 9.941 ; 9.846 ;
+; numValue[1] ; ssds[0][4]  ; 9.035 ; 8.960 ; 9.204 ; 9.172 ;
+; numValue[1] ; ssds[0][5]  ; 9.574 ; 9.545 ; 9.765 ; 9.714 ;
+; numValue[1] ; ssds[0][6]  ; 9.592 ; 9.580 ; 9.761 ; 9.749 ;
+; numValue[1] ; ssds[1][0]  ; 7.795 ;       ;       ; 8.107 ;
+; numValue[1] ; ssds[1][3]  ; 7.631 ;       ;       ; 7.909 ;
+; numValue[1] ; ssds[1][4]  ; 7.641 ;       ;       ; 7.919 ;
+; numValue[1] ; ssds[1][5]  ; 8.151 ;       ;       ; 8.487 ;
+; numValue[2] ; ssds[0][0]  ; 8.636 ; 8.578 ; 9.019 ; 9.004 ;
+; numValue[2] ; ssds[0][1]  ; 8.254 ; 8.229 ; 8.637 ; 8.612 ;
+; numValue[2] ; ssds[0][2]  ; 8.258 ; 8.324 ; 8.684 ; 8.707 ;
+; numValue[2] ; ssds[0][3]  ; 9.079 ; 8.984 ; 9.462 ; 9.367 ;
+; numValue[2] ; ssds[0][4]  ; 8.342 ; 8.267 ; 8.725 ; 8.693 ;
+; numValue[2] ; ssds[0][5]  ; 8.881 ; 8.852 ; 9.264 ; 9.235 ;
+; numValue[2] ; ssds[0][6]  ; 8.899 ; 8.887 ; 9.282 ; 9.270 ;
+; numValue[2] ; ssds[1][0]  ; 7.100 ;       ;       ; 7.629 ;
+; numValue[2] ; ssds[1][3]  ; 6.936 ;       ;       ; 7.431 ;
+; numValue[2] ; ssds[1][4]  ; 6.946 ;       ;       ; 7.441 ;
+; numValue[2] ; ssds[1][5]  ; 7.456 ;       ;       ; 8.009 ;
+; numValue[3] ; ssds[0][0]  ; 8.692 ; 8.634 ; 8.836 ; 8.821 ;
+; numValue[3] ; ssds[0][1]  ; 8.310 ; 8.285 ; 8.454 ; 8.429 ;
+; numValue[3] ; ssds[0][2]  ; 8.314 ; 8.380 ; 8.501 ; 8.524 ;
+; numValue[3] ; ssds[0][3]  ; 9.135 ; 9.040 ; 9.279 ; 9.184 ;
+; numValue[3] ; ssds[0][4]  ; 8.398 ; 8.323 ; 8.542 ; 8.510 ;
+; numValue[3] ; ssds[0][5]  ; 8.937 ; 8.908 ; 9.081 ; 9.052 ;
+; numValue[3] ; ssds[0][6]  ; 8.955 ; 8.943 ; 9.099 ; 9.087 ;
+; numValue[3] ; ssds[1][0]  ; 7.158 ;       ;       ; 7.448 ;
+; numValue[3] ; ssds[1][3]  ; 6.994 ;       ;       ; 7.250 ;
+; numValue[3] ; ssds[1][4]  ; 7.004 ;       ;       ; 7.260 ;
+; numValue[3] ; ssds[1][5]  ; 7.514 ;       ;       ; 7.828 ;
++-------------+-------------+-------+-------+-------+-------+
+
+
++-----------------------------------------------------------+
+; Minimum Progagation Delay                                 ;
++-------------+-------------+-------+-------+-------+-------+
+; Input Port  ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++-------------+-------------+-------+-------+-------+-------+
+; numValue[0] ; ssds[0][0]  ; 3.838 ; 3.853 ; 4.391 ; 4.425 ;
+; numValue[0] ; ssds[0][1]  ; 3.556 ; 3.591 ; 4.106 ; 4.161 ;
+; numValue[0] ; ssds[0][2]  ;       ; 3.659 ; 4.226 ;       ;
+; numValue[0] ; ssds[0][3]  ; 3.971 ; 4.019 ; 4.524 ; 4.592 ;
+; numValue[0] ; ssds[0][4]  ; 3.657 ;       ;       ; 4.223 ;
+; numValue[0] ; ssds[0][5]  ; 3.912 ;       ;       ; 4.535 ;
+; numValue[0] ; ssds[0][6]  ; 4.012 ; 3.973 ; 4.584 ; 4.526 ;
+; numValue[1] ; ssds[0][0]  ; 4.516 ; 4.550 ; 5.196 ; 5.189 ;
+; numValue[1] ; ssds[0][1]  ; 4.228 ; 4.310 ; 4.930 ; 4.926 ;
+; numValue[1] ; ssds[0][2]  ; 4.353 ; 4.642 ; 5.143 ; 5.016 ;
+; numValue[1] ; ssds[0][3]  ; 4.643 ; 4.701 ; 5.316 ; 5.358 ;
+; numValue[1] ; ssds[0][4]  ; 4.630 ; 4.335 ; 4.999 ; 5.125 ;
+; numValue[1] ; ssds[0][5]  ; 4.604 ; 4.660 ; 5.268 ; 5.332 ;
+; numValue[1] ; ssds[0][6]  ; 4.730 ; 4.643 ; 5.363 ; 5.348 ;
+; numValue[1] ; ssds[1][0]  ; 4.372 ;       ;       ; 4.883 ;
+; numValue[1] ; ssds[1][3]  ; 4.274 ;       ;       ; 4.793 ;
+; numValue[1] ; ssds[1][4]  ; 4.284 ;       ;       ; 4.803 ;
+; numValue[1] ; ssds[1][5]  ; 4.585 ;       ;       ; 5.086 ;
+; numValue[2] ; ssds[0][0]  ; 4.261 ; 4.295 ; 4.901 ; 4.888 ;
+; numValue[2] ; ssds[0][1]  ; 3.971 ; 4.273 ; 4.773 ; 4.624 ;
+; numValue[2] ; ssds[0][2]  ; 4.091 ; 4.110 ; 4.744 ; 4.704 ;
+; numValue[2] ; ssds[0][3]  ; 4.390 ; 4.450 ; 5.013 ; 5.072 ;
+; numValue[2] ; ssds[0][4]  ; 4.113 ; 4.088 ; 4.703 ; 4.729 ;
+; numValue[2] ; ssds[0][5]  ; 4.336 ; 4.413 ; 4.974 ; 4.997 ;
+; numValue[2] ; ssds[0][6]  ; 4.438 ; 4.413 ; 5.063 ; 5.009 ;
+; numValue[2] ; ssds[1][0]  ; 4.065 ;       ;       ; 4.535 ;
+; numValue[2] ; ssds[1][3]  ; 3.967 ;       ;       ; 4.445 ;
+; numValue[2] ; ssds[1][4]  ; 3.977 ;       ;       ; 4.455 ;
+; numValue[2] ; ssds[1][5]  ; 4.278 ;       ;       ; 4.738 ;
+; numValue[3] ; ssds[0][0]  ; 4.151 ; 4.171 ; 4.768 ; 4.781 ;
+; numValue[3] ; ssds[0][1]  ; 3.870 ; 3.910 ; 4.487 ; 4.520 ;
+; numValue[3] ; ssds[0][2]  ; 3.974 ; 3.972 ; 4.584 ; 4.589 ;
+; numValue[3] ; ssds[0][3]  ; 4.284 ; 4.337 ; 4.901 ; 4.947 ;
+; numValue[3] ; ssds[0][4]  ; 4.279 ; 3.973 ; 4.588 ; 4.748 ;
+; numValue[3] ; ssds[0][5]  ; 4.225 ; 4.281 ; 4.842 ; 4.891 ;
+; numValue[3] ; ssds[0][6]  ; 4.329 ; 4.285 ; 4.940 ; 4.903 ;
+; numValue[3] ; ssds[1][0]  ; 4.011 ;       ;       ; 4.489 ;
+; numValue[3] ; ssds[1][3]  ; 3.913 ;       ;       ; 4.399 ;
+; numValue[3] ; ssds[1][4]  ; 3.923 ;       ;       ; 4.409 ;
+; numValue[3] ; ssds[1][5]  ; 4.224 ;       ;       ; 4.692 ;
++-------------+-------------+-------+-------+-------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                    ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin           ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; ssds[0][0]    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ssds[0][1]    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ssds[0][2]    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ssds[0][3]    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ssds[0][4]    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ssds[0][5]    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ssds[0][6]    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ssds[1][0]    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ssds[1][1]    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ssds[1][2]    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ssds[1][3]    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ssds[1][4]    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ssds[1][5]    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ssds[1][6]    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ssds[2][0]    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ssds[2][1]    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ssds[2][2]    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ssds[2][3]    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ssds[2][4]    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ssds[2][5]    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ssds[2][6]    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++----------------------------------------------------------------------------+
+; Input Transition Times                                                     ;
++-------------------------+--------------+-----------------+-----------------+
+; Pin                     ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++-------------------------+--------------+-----------------+-----------------+
+; numValue[3]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; numValue[2]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; numValue[1]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; numValue[0]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_ASDO_DATA1~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_FLASH_nCE_nCSO~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++-------------------------+--------------+-----------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Corner Signal Integrity Metrics                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; ssds[0][0]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.25e-07 V                   ; 2.35 V              ; -0.0111 V           ; 0.113 V                              ; 0.035 V                              ; 7.76e-10 s                  ; 8.04e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.25e-07 V                  ; 2.35 V             ; -0.0111 V          ; 0.113 V                             ; 0.035 V                             ; 7.76e-10 s                 ; 8.04e-10 s                 ; Yes                       ; Yes                       ;
+; ssds[0][1]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.25e-07 V                   ; 2.36 V              ; -0.00946 V          ; 0.111 V                              ; 0.027 V                              ; 6.46e-10 s                  ; 6.2e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 7.25e-07 V                  ; 2.36 V             ; -0.00946 V         ; 0.111 V                             ; 0.027 V                             ; 6.46e-10 s                 ; 6.2e-10 s                  ; Yes                       ; Yes                       ;
+; ssds[0][2]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.25e-07 V                   ; 2.35 V              ; -0.0111 V           ; 0.113 V                              ; 0.035 V                              ; 7.76e-10 s                  ; 8.04e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.25e-07 V                  ; 2.35 V             ; -0.0111 V          ; 0.113 V                             ; 0.035 V                             ; 7.76e-10 s                 ; 8.04e-10 s                 ; Yes                       ; Yes                       ;
+; ssds[0][3]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.08e-06 V                   ; 2.36 V              ; -0.0113 V           ; 0.122 V                              ; 0.022 V                              ; 4.5e-10 s                   ; 4.45e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.08e-06 V                  ; 2.36 V             ; -0.0113 V          ; 0.122 V                             ; 0.022 V                             ; 4.5e-10 s                  ; 4.45e-10 s                 ; Yes                       ; Yes                       ;
+; ssds[0][4]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.25e-07 V                   ; 2.35 V              ; -0.0111 V           ; 0.113 V                              ; 0.035 V                              ; 7.76e-10 s                  ; 8.04e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.25e-07 V                  ; 2.35 V             ; -0.0111 V          ; 0.113 V                             ; 0.035 V                             ; 7.76e-10 s                 ; 8.04e-10 s                 ; Yes                       ; Yes                       ;
+; ssds[0][5]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.08e-06 V                   ; 2.36 V              ; -0.0113 V           ; 0.122 V                              ; 0.022 V                              ; 4.5e-10 s                   ; 4.45e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.08e-06 V                  ; 2.36 V             ; -0.0113 V          ; 0.122 V                             ; 0.022 V                             ; 4.5e-10 s                  ; 4.45e-10 s                 ; Yes                       ; Yes                       ;
+; ssds[0][6]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.25e-07 V                   ; 2.35 V              ; -0.0111 V           ; 0.113 V                              ; 0.035 V                              ; 7.76e-10 s                  ; 8.04e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.25e-07 V                  ; 2.35 V             ; -0.0111 V          ; 0.113 V                             ; 0.035 V                             ; 7.76e-10 s                 ; 8.04e-10 s                 ; Yes                       ; Yes                       ;
+; ssds[1][0]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.08e-06 V                   ; 2.36 V              ; -0.0113 V           ; 0.122 V                              ; 0.022 V                              ; 4.5e-10 s                   ; 4.45e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.08e-06 V                  ; 2.36 V             ; -0.0113 V          ; 0.122 V                             ; 0.022 V                             ; 4.5e-10 s                  ; 4.45e-10 s                 ; Yes                       ; Yes                       ;
+; ssds[1][1]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.08e-06 V                   ; 2.36 V              ; -0.0113 V           ; 0.122 V                              ; 0.022 V                              ; 4.5e-10 s                   ; 4.45e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.08e-06 V                  ; 2.36 V             ; -0.0113 V          ; 0.122 V                             ; 0.022 V                             ; 4.5e-10 s                  ; 4.45e-10 s                 ; Yes                       ; Yes                       ;
+; ssds[1][2]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.08e-06 V                   ; 2.36 V              ; -0.0113 V           ; 0.122 V                              ; 0.022 V                              ; 4.5e-10 s                   ; 4.45e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.08e-06 V                  ; 2.36 V             ; -0.0113 V          ; 0.122 V                             ; 0.022 V                             ; 4.5e-10 s                  ; 4.45e-10 s                 ; Yes                       ; Yes                       ;
+; ssds[1][3]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.08e-06 V                   ; 2.36 V              ; -0.0113 V           ; 0.122 V                              ; 0.022 V                              ; 4.5e-10 s                   ; 4.45e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.08e-06 V                  ; 2.36 V             ; -0.0113 V          ; 0.122 V                             ; 0.022 V                             ; 4.5e-10 s                  ; 4.45e-10 s                 ; Yes                       ; Yes                       ;
+; ssds[1][4]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.08e-06 V                   ; 2.36 V              ; -0.0113 V           ; 0.122 V                              ; 0.022 V                              ; 4.5e-10 s                   ; 4.45e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.08e-06 V                  ; 2.36 V             ; -0.0113 V          ; 0.122 V                             ; 0.022 V                             ; 4.5e-10 s                  ; 4.45e-10 s                 ; Yes                       ; Yes                       ;
+; ssds[1][5]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.08e-06 V                   ; 2.36 V              ; -0.0113 V           ; 0.122 V                              ; 0.022 V                              ; 4.5e-10 s                   ; 4.45e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.08e-06 V                  ; 2.36 V             ; -0.0113 V          ; 0.122 V                             ; 0.022 V                             ; 4.5e-10 s                  ; 4.45e-10 s                 ; Yes                       ; Yes                       ;
+; ssds[1][6]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.08e-06 V                   ; 2.36 V              ; -0.0113 V           ; 0.122 V                              ; 0.022 V                              ; 4.5e-10 s                   ; 4.45e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.08e-06 V                  ; 2.36 V             ; -0.0113 V          ; 0.122 V                             ; 0.022 V                             ; 4.5e-10 s                  ; 4.45e-10 s                 ; Yes                       ; Yes                       ;
+; ssds[2][0]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.25e-07 V                   ; 2.33 V              ; -0.00317 V          ; 0.162 V                              ; 0.063 V                              ; 3.54e-09 s                  ; 3.41e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.25e-07 V                  ; 2.33 V             ; -0.00317 V         ; 0.162 V                             ; 0.063 V                             ; 3.54e-09 s                 ; 3.41e-09 s                 ; Yes                       ; Yes                       ;
+; ssds[2][1]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.25e-07 V                   ; 2.33 V              ; -0.00317 V          ; 0.162 V                              ; 0.063 V                              ; 3.54e-09 s                  ; 3.41e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.25e-07 V                  ; 2.33 V             ; -0.00317 V         ; 0.162 V                             ; 0.063 V                             ; 3.54e-09 s                 ; 3.41e-09 s                 ; Yes                       ; Yes                       ;
+; ssds[2][2]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.25e-07 V                   ; 2.35 V              ; -0.0111 V           ; 0.113 V                              ; 0.035 V                              ; 7.76e-10 s                  ; 8.04e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.25e-07 V                  ; 2.35 V             ; -0.0111 V          ; 0.113 V                             ; 0.035 V                             ; 7.76e-10 s                 ; 8.04e-10 s                 ; Yes                       ; Yes                       ;
+; ssds[2][3]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.25e-07 V                   ; 2.35 V              ; -0.0111 V           ; 0.113 V                              ; 0.035 V                              ; 7.76e-10 s                  ; 8.04e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.25e-07 V                  ; 2.35 V             ; -0.0111 V          ; 0.113 V                             ; 0.035 V                             ; 7.76e-10 s                 ; 8.04e-10 s                 ; Yes                       ; Yes                       ;
+; ssds[2][4]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.25e-07 V                   ; 2.35 V              ; -0.0111 V           ; 0.113 V                              ; 0.035 V                              ; 7.76e-10 s                  ; 8.04e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.25e-07 V                  ; 2.35 V             ; -0.0111 V          ; 0.113 V                             ; 0.035 V                             ; 7.76e-10 s                 ; 8.04e-10 s                 ; Yes                       ; Yes                       ;
+; ssds[2][5]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.08e-06 V                   ; 2.36 V              ; -0.0113 V           ; 0.122 V                              ; 0.022 V                              ; 4.5e-10 s                   ; 4.45e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.08e-06 V                  ; 2.36 V             ; -0.0113 V          ; 0.122 V                             ; 0.022 V                             ; 4.5e-10 s                  ; 4.45e-10 s                 ; Yes                       ; Yes                       ;
+; ssds[2][6]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.08e-06 V                   ; 2.36 V              ; -0.0113 V           ; 0.122 V                              ; 0.022 V                              ; 4.5e-10 s                   ; 4.45e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.08e-06 V                  ; 2.36 V             ; -0.0113 V          ; 0.122 V                             ; 0.022 V                             ; 4.5e-10 s                  ; 4.45e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.68e-07 V                   ; 2.35 V              ; -0.0132 V           ; 0.2 V                                ; 0.027 V                              ; 5.26e-10 s                  ; 4.81e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 5.68e-07 V                  ; 2.35 V             ; -0.0132 V          ; 0.2 V                               ; 0.027 V                             ; 5.26e-10 s                 ; 4.81e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.36e-07 V                   ; 2.35 V              ; -0.00444 V          ; 0.18 V                               ; 0.019 V                              ; 7.23e-10 s                  ; 9.82e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 9.36e-07 V                  ; 2.35 V             ; -0.00444 V         ; 0.18 V                              ; 0.019 V                             ; 7.23e-10 s                 ; 9.82e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Corner Signal Integrity Metrics                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; ssds[0][0]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.78e-08 V                   ; 2.71 V              ; -0.0349 V           ; 0.253 V                              ; 0.069 V                              ; 4.96e-10 s                  ; 5.19e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.78e-08 V                  ; 2.71 V             ; -0.0349 V          ; 0.253 V                             ; 0.069 V                             ; 4.96e-10 s                 ; 5.19e-10 s                 ; No                        ; Yes                       ;
+; ssds[0][1]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.78e-08 V                   ; 2.72 V              ; -0.0408 V           ; 0.163 V                              ; 0.075 V                              ; 4.51e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.78e-08 V                  ; 2.72 V             ; -0.0408 V          ; 0.163 V                             ; 0.075 V                             ; 4.51e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; ssds[0][2]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.78e-08 V                   ; 2.71 V              ; -0.0349 V           ; 0.253 V                              ; 0.069 V                              ; 4.96e-10 s                  ; 5.19e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.78e-08 V                  ; 2.71 V             ; -0.0349 V          ; 0.253 V                             ; 0.069 V                             ; 4.96e-10 s                 ; 5.19e-10 s                 ; No                        ; Yes                       ;
+; ssds[0][3]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.11e-08 V                   ; 2.73 V              ; -0.0566 V           ; 0.191 V                              ; 0.12 V                               ; 2.69e-10 s                  ; 2.76e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.11e-08 V                  ; 2.73 V             ; -0.0566 V          ; 0.191 V                             ; 0.12 V                              ; 2.69e-10 s                 ; 2.76e-10 s                 ; Yes                       ; Yes                       ;
+; ssds[0][4]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.78e-08 V                   ; 2.71 V              ; -0.0349 V           ; 0.253 V                              ; 0.069 V                              ; 4.96e-10 s                  ; 5.19e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.78e-08 V                  ; 2.71 V             ; -0.0349 V          ; 0.253 V                             ; 0.069 V                             ; 4.96e-10 s                 ; 5.19e-10 s                 ; No                        ; Yes                       ;
+; ssds[0][5]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.11e-08 V                   ; 2.73 V              ; -0.0566 V           ; 0.191 V                              ; 0.12 V                               ; 2.69e-10 s                  ; 2.76e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.11e-08 V                  ; 2.73 V             ; -0.0566 V          ; 0.191 V                             ; 0.12 V                              ; 2.69e-10 s                 ; 2.76e-10 s                 ; Yes                       ; Yes                       ;
+; ssds[0][6]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.78e-08 V                   ; 2.71 V              ; -0.0349 V           ; 0.253 V                              ; 0.069 V                              ; 4.96e-10 s                  ; 5.19e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.78e-08 V                  ; 2.71 V             ; -0.0349 V          ; 0.253 V                             ; 0.069 V                             ; 4.96e-10 s                 ; 5.19e-10 s                 ; No                        ; Yes                       ;
+; ssds[1][0]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.11e-08 V                   ; 2.73 V              ; -0.0566 V           ; 0.191 V                              ; 0.12 V                               ; 2.69e-10 s                  ; 2.76e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.11e-08 V                  ; 2.73 V             ; -0.0566 V          ; 0.191 V                             ; 0.12 V                              ; 2.69e-10 s                 ; 2.76e-10 s                 ; Yes                       ; Yes                       ;
+; ssds[1][1]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.11e-08 V                   ; 2.73 V              ; -0.0566 V           ; 0.191 V                              ; 0.12 V                               ; 2.69e-10 s                  ; 2.76e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.11e-08 V                  ; 2.73 V             ; -0.0566 V          ; 0.191 V                             ; 0.12 V                              ; 2.69e-10 s                 ; 2.76e-10 s                 ; Yes                       ; Yes                       ;
+; ssds[1][2]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.11e-08 V                   ; 2.73 V              ; -0.0566 V           ; 0.191 V                              ; 0.12 V                               ; 2.69e-10 s                  ; 2.76e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.11e-08 V                  ; 2.73 V             ; -0.0566 V          ; 0.191 V                             ; 0.12 V                              ; 2.69e-10 s                 ; 2.76e-10 s                 ; Yes                       ; Yes                       ;
+; ssds[1][3]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.11e-08 V                   ; 2.73 V              ; -0.0566 V           ; 0.191 V                              ; 0.12 V                               ; 2.69e-10 s                  ; 2.76e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.11e-08 V                  ; 2.73 V             ; -0.0566 V          ; 0.191 V                             ; 0.12 V                              ; 2.69e-10 s                 ; 2.76e-10 s                 ; Yes                       ; Yes                       ;
+; ssds[1][4]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.11e-08 V                   ; 2.73 V              ; -0.0566 V           ; 0.191 V                              ; 0.12 V                               ; 2.69e-10 s                  ; 2.76e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.11e-08 V                  ; 2.73 V             ; -0.0566 V          ; 0.191 V                             ; 0.12 V                              ; 2.69e-10 s                 ; 2.76e-10 s                 ; Yes                       ; Yes                       ;
+; ssds[1][5]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.11e-08 V                   ; 2.73 V              ; -0.0566 V           ; 0.191 V                              ; 0.12 V                               ; 2.69e-10 s                  ; 2.76e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.11e-08 V                  ; 2.73 V             ; -0.0566 V          ; 0.191 V                             ; 0.12 V                              ; 2.69e-10 s                 ; 2.76e-10 s                 ; Yes                       ; Yes                       ;
+; ssds[1][6]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.11e-08 V                   ; 2.73 V              ; -0.0566 V           ; 0.191 V                              ; 0.12 V                               ; 2.69e-10 s                  ; 2.76e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.11e-08 V                  ; 2.73 V             ; -0.0566 V          ; 0.191 V                             ; 0.12 V                              ; 2.69e-10 s                 ; 2.76e-10 s                 ; Yes                       ; Yes                       ;
+; ssds[2][0]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.78e-08 V                   ; 2.64 V              ; -0.0109 V           ; 0.244 V                              ; 0.16 V                               ; 2.42e-09 s                  ; 2.37e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.78e-08 V                  ; 2.64 V             ; -0.0109 V          ; 0.244 V                             ; 0.16 V                              ; 2.42e-09 s                 ; 2.37e-09 s                 ; No                        ; Yes                       ;
+; ssds[2][1]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.78e-08 V                   ; 2.64 V              ; -0.0109 V           ; 0.244 V                              ; 0.16 V                               ; 2.42e-09 s                  ; 2.37e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.78e-08 V                  ; 2.64 V             ; -0.0109 V          ; 0.244 V                             ; 0.16 V                              ; 2.42e-09 s                 ; 2.37e-09 s                 ; No                        ; Yes                       ;
+; ssds[2][2]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.78e-08 V                   ; 2.71 V              ; -0.0349 V           ; 0.253 V                              ; 0.069 V                              ; 4.96e-10 s                  ; 5.19e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.78e-08 V                  ; 2.71 V             ; -0.0349 V          ; 0.253 V                             ; 0.069 V                             ; 4.96e-10 s                 ; 5.19e-10 s                 ; No                        ; Yes                       ;
+; ssds[2][3]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.78e-08 V                   ; 2.71 V              ; -0.0349 V           ; 0.253 V                              ; 0.069 V                              ; 4.96e-10 s                  ; 5.19e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.78e-08 V                  ; 2.71 V             ; -0.0349 V          ; 0.253 V                             ; 0.069 V                             ; 4.96e-10 s                 ; 5.19e-10 s                 ; No                        ; Yes                       ;
+; ssds[2][4]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.78e-08 V                   ; 2.71 V              ; -0.0349 V           ; 0.253 V                              ; 0.069 V                              ; 4.96e-10 s                  ; 5.19e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.78e-08 V                  ; 2.71 V             ; -0.0349 V          ; 0.253 V                             ; 0.069 V                             ; 4.96e-10 s                 ; 5.19e-10 s                 ; No                        ; Yes                       ;
+; ssds[2][5]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.11e-08 V                   ; 2.73 V              ; -0.0566 V           ; 0.191 V                              ; 0.12 V                               ; 2.69e-10 s                  ; 2.76e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.11e-08 V                  ; 2.73 V             ; -0.0566 V          ; 0.191 V                             ; 0.12 V                              ; 2.69e-10 s                 ; 2.76e-10 s                 ; Yes                       ; Yes                       ;
+; ssds[2][6]    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.11e-08 V                   ; 2.73 V              ; -0.0566 V           ; 0.191 V                              ; 0.12 V                               ; 2.69e-10 s                  ; 2.76e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.11e-08 V                  ; 2.73 V             ; -0.0566 V          ; 0.191 V                             ; 0.12 V                              ; 2.69e-10 s                 ; 2.76e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.22e-08 V                   ; 2.72 V              ; -0.0747 V           ; 0.28 V                               ; 0.169 V                              ; 3.1e-10 s                   ; 3.01e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.22e-08 V                  ; 2.72 V             ; -0.0747 V          ; 0.28 V                              ; 0.169 V                             ; 3.1e-10 s                  ; 3.01e-10 s                 ; No                        ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.53e-08 V                   ; 2.7 V               ; -0.0212 V           ; 0.204 V                              ; 0.049 V                              ; 4.85e-10 s                  ; 6.73e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.53e-08 V                  ; 2.7 V              ; -0.0212 V          ; 0.204 V                             ; 0.049 V                             ; 4.85e-10 s                 ; 6.73e-10 s                 ; No                        ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 4     ; 4    ;
+; Unconstrained Input Port Paths  ; 40    ; 40   ;
+; Unconstrained Output Ports      ; 11    ; 11   ;
+; Unconstrained Output Port Paths ; 40    ; 40   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed May 09 18:18:42 2018
+Info: Command: quartus_sta HexToSSD -c HexToSSD
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Core supply voltage is 1.2V
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'HexToSSD.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info: Analyzing Slow 1200mV 85C Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Fast 1200mV 0C Model
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 509 megabytes
+    Info: Processing ended: Wed May 09 18:18:46 2018
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:02
+
+

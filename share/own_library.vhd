@@ -27,6 +27,9 @@ constant SSD_C: SSD := "1000110";
 constant SSD_D: SSD := "0100001";
 constant SSD_E: SSD := "0000110";
 constant SSD_F: SSD := "0001110";
+
+constant NEG_SINE: SSD := "0111111";
+constant BLANK: SSD := "1111111";
 --------------------------------------------------
 
 END own_library;
