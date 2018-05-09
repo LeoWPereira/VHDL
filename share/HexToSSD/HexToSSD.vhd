@@ -55,8 +55,8 @@ begin
 					  SSD_F;
 					  
 					  
-		disp(k+1) <= div(k) mod 10;
-		div(k+1) <= div(k) / 10;
+		disp(k+1) <= div(k) mod BASE_NUM;
+		div(k+1) <= div(k) / BASE_NUM;
 	
 	END GENERATE DIVISOR;
 	
