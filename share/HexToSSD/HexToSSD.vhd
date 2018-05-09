@@ -14,13 +14,13 @@ entity HexToSSD is
 	port (
 		numValue: in integer range MIN_VALUE to MAX_VALUE;
 		
-		ssds	: out SSDArray(((natural(FLOOR(LOG10(real(MAX_VALUE))) + 1.0)) / (1)) downto 0)
+		ssds	: out SSDArray(((natural(FLOOR(LOG(real(MAX_VALUE), real(BASE_NUM))) + 1.0))) downto 0)
 	);
 end entity;
 --
 architecture HexToSSD of HexToSSD IS
-	constant SDD_N			: natural := natural(FLOOR(LOG10(real(MAX_VALUE))) + 1.0);
-
+	constant SDD_N			: natural := natural(FLOOR(LOG(real(MAX_VALUE), real(BASE_NUM))) + 1.0);
+	
 	type 		div_array is array((SDD_N + 1) downto 0) of natural;
 	
 	SIGNAL disp, div: div_array;

@@ -1,5 +1,5 @@
 Flow report for HexToSSD
-Wed May 09 18:18:46 2018
+Wed May 09 19:46:12 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Wed May 09 18:18:41 2018           ;
+; Flow Status                        ; Successful - Wed May 09 19:46:08 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; HexToSSD                                        ;
 ; Top-level Entity Name              ; HexToSSD                                        ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/09/2018 18:18:23 ;
+; Start date & time ; 05/09/2018 19:45:53 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; HexToSSD            ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+---------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 176694087275301.152590070307716 ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 176694087275301.152590595303944 ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --            ; --          ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                            ; --            ; --          ; --         ;
@@ -91,11 +91,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:08     ; 1.0                     ; 597 MB              ; 00:00:04                           ;
+; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 577 MB              ; 00:00:03                           ;
 ; Fitter                    ; 00:00:07     ; 1.0                     ; 797 MB              ; 00:00:06                           ;
 ; Assembler                 ; 00:00:01     ; 1.0                     ; 468 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 509 MB              ; 00:00:02                           ;
-; Total                     ; 00:00:20     ; --                      ; --                  ; 00:00:13                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 509 MB              ; 00:00:02                           ;
+; Total                     ; 00:00:14     ; --                      ; --                  ; 00:00:12                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

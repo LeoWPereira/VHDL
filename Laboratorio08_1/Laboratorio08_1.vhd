@@ -8,29 +8,28 @@ use work.own_library.all;
 entity Laboratorio08_1 is
 	generic (
 		FCLK: NATURAL := 50_000_000;
-		START_SPEED_MS: NATURAL := 50;
-		MIN_VALUE: INTEGER := -10;
-		MAX_VALUE: INTEGER := 10
+		MIN_VALUE: INTEGER := -255;
+		MAX_VALUE: INTEGER := 255;
+		BASE_NUM 	: natural := 16
 	);
 	
 	port (
 		BTN_DEC: IN STD_LOGIC;
 		BTN_INC: IN STD_LOGIC;
-		SSDS: out SSDArray(NATURAL(FLOOR (LOG10(REAL (MAX_VALUE))) + 1.0) DOWNTO 0);	
+		SSDS: out SSDArray(((natural(FLOOR(LOG(real(MAX_VALUE), real(BASE_NUM))) + 1.0))) downto 0);
 		CLK: IN STD_LOGIC
-
 	);
 end entity;
 --
 architecture Laboratorio08_1 of Laboratorio08_1 IS
 	signal decWatch, incWatch, changeWatch: std_logic;
-	signal totalValue: integer range MIN_VALUE to MAX_VALUE;
+	signal totalValue: integer range MIN_VALUE to MAX_VALUE := 0;
 begin
 	
 	btnDec: entity work.debouncer PORT MAP (clk => CLK, button => BTN_DEC, result => decWatch);
 	btnInc: entity work.debouncer PORT MAP (clk => CLK, button => BTN_INC, result => incWatch);
 	
-	num2disp: entity work.HexToSSD GENERIC MAP (MIN_VALUE => MIN_VALUE, MAX_VALUE => MAX_VALUE) PORT MAP (numValue => totalValue, ssds => SSDS);
+	num2disp: entity work.HexToSSD GENERIC MAP (MIN_VALUE => MIN_VALUE, MAX_VALUE => MAX_VALUE, BASE_NUM => BASE_NUM) PORT MAP (numValue => totalValue, ssds => SSDS);
 
 	changeWatch <= decWatch nand incWatch;
 	
