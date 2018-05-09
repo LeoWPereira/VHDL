@@ -3,19 +3,19 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'CLK'
-Slack : -3.034
-TNS   : -40.501
+Slack : -3.032
+TNS   : -41.024
 
 Type  : Slow 1200mV 85C Model Setup 'clockTimer'
-Slack : -1.021
-TNS   : -24.161
+Slack : -0.607
+TNS   : -6.241
 
 Type  : Slow 1200mV 85C Model Hold 'clockTimer'
-Slack : 0.358
+Slack : 0.343
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'CLK'
-Slack : 0.549
+Slack : 0.552
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
@@ -24,22 +24,22 @@ TNS   : -23.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clockTimer'
 Slack : -1.000
-TNS   : -30.000
+TNS   : -18.000
 
 Type  : Slow 1200mV 0C Model Setup 'CLK'
-Slack : -2.604
-TNS   : -33.926
+Slack : -2.573
+TNS   : -34.081
 
 Type  : Slow 1200mV 0C Model Setup 'clockTimer'
-Slack : -0.824
-TNS   : -19.166
+Slack : -0.453
+TNS   : -4.160
 
 Type  : Slow 1200mV 0C Model Hold 'clockTimer'
-Slack : 0.313
+Slack : 0.299
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'CLK'
-Slack : 0.493
+Slack : 0.495
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
@@ -48,30 +48,30 @@ TNS   : -23.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clockTimer'
 Slack : -1.000
-TNS   : -30.000
+TNS   : -18.000
 
 Type  : Fast 1200mV 0C Model Setup 'CLK'
-Slack : -1.285
-TNS   : -13.951
+Slack : -1.289
+TNS   : -14.538
 
 Type  : Fast 1200mV 0C Model Setup 'clockTimer'
-Slack : -0.096
-TNS   : -1.536
+Slack : 0.117
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clockTimer'
-Slack : 0.187
+Slack : 0.179
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'CLK'
-Slack : 0.295
+Slack : 0.296
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
-TNS   : -24.286
+TNS   : -24.234
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clockTimer'
 Slack : -1.000
-TNS   : -30.000
+TNS   : -18.000
 
 ------------------------------------------------------------

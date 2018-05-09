@@ -5,7 +5,7 @@ entity Laboratorio_07_1 is
 	generic (
 		FCLK: NATURAL := 50_000_000;
 		NUM_BTN: NATURAL := 3;
-		TIME_DEBOUNCE_MS: NATURAL := 2000;
+		TIME_DEBOUNCE_MS: NATURAL := 100;
 		TIME_MS: NATURAL := 10
 	);
 	port (
