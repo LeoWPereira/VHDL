@@ -8,59 +8,47 @@ use work.own_library.all;
 entity Laboratorio08_2 is
 	generic (
 		FCLK: NATURAL := 50_000_000;
-		NUM_LEDS: NATURAL := 8;
+		NUM_LEDS: NATURAL := 10;
 		INIT_TIME_LED: NATURAL := 2000; -- value in ms
-		MAX_POINTS: INTEGER := 5;
-		TIME_MS: NATURAL := 10
+		TIME_MS: NATURAL := 1;
+		MAX_POINTS: NATURAL := 5
 	);
 	
 	port (
+		SSDS_POINTS: out SSDArray(NATURAL(FLOOR (LOG10(REAL (MAX_POINTS))) + 1.0) DOWNTO 0);	
+		SSD_RANDOM_POSITION: out SSDArray(NATURAL(FLOOR (LOG10(REAL (NUM_LEDS-1) + 1.0))) DOWNTO 0);
 		START_GAME: IN STD_LOGIC;
 		BTN_INPUT: IN STD_LOGIC;
-		SSDS_POINTS: out SSDArray(NATURAL(FLOOR (LOG10(REAL (MAX_POINTS))) + 1.0) DOWNTO 0);	
-		SSD_RANDOM_POSITION: out SSDArray(NATURAL(FLOOR (LOG10(REAL (NUM_LEDS))) + 1.0) DOWNTO 0);
+		LEDS : out STD_LOGIC_VECTOR((NUM_LEDS - 1) DOWNTO 0);
 		CLK: IN STD_LOGIC
 	);
 end entity;
 --
 architecture Laboratorio08_2 of Laboratorio08_2 IS
-	signal inputPressed, startGamePressed: std_logic;
-	signal totalPoints: integer range 0 to MAX_POINTS + 1;
-
 	constant LIMIT_TIMER: natural := FCLK / 1000 * TIME_MS;
-	signal time_led: natural := INIT_TIME_LED;
 	signal clockTimer: std_logic;
-	signal gameRunning: std_logic;
-	signal btnNotPressed: std_logic;
-	signal num2BePressed:natural range 0 to NUM_LEDS;
-	signal led2BeTurnedOn: natural range 0 to NUM_LEDS;
+	signal inputPressed, startGamePressed: std_logic;
+	signal gameRunning: std_logic := '0';
+	signal roundNumber: natural range 0 to NUM_LEDS-1 := 0;
+	signal randomNumber: natural range 0 to NUM_LEDS-1 := 0;
+	signal totalPoints: natural range 0 to MAX_POINTS := 0;
+	signal successHit: std_logic;
+	signal errorHit: std_logic;
 begin
-
 	btnInput: entity work.debouncer PORT MAP (clk => CLK, button => BTN_INPUT, result => inputPressed);
 	btnStartGame: entity work.debouncer PORT MAP (clk => CLK, button => START_GAME, result => startGamePressed);
 	
 	num2dispPoints: entity work.HexToSSD GENERIC MAP (MIN_VALUE => 0, MAX_VALUE => MAX_POINTS) PORT MAP (numValue => totalPoints, ssds => SSDS_POINTS);
-	num2dispRandomNumber: entity work.HexToSSD GENERIC MAP (MIN_VALUE => 1, MAX_VALUE => MAX_POINTS) PORT MAP (numValue => num2BePressed, ssds => SSD_RANDOM_POSITION);
+	num2dispRandomNumber: entity work.HexToSSD GENERIC MAP (MIN_VALUE => 0, MAX_VALUE => NUM_LEDS - 1) PORT MAP (numValue => roundNumber, ssds => SSD_RANDOM_POSITION);
 
-
-		
-	-- Process to start game and set signal gameRunning
-	process (startGamePressed, gameRunning, totalPoints, btnNotPressed)
-	begin 
-		if rising_edge (startGamePressed) then
-			gameRunning <= '1';
-			totalPoints <= 0;
-			btnNotPressed <= '0';
-		end if;
-	end process;
-
-	-- Clock to generate rising_edge for the game depending on the time_led variable
-	process (CLK, clockTimer, time_led)
-		variable counter:natural;
+	-- Timer
+	process (CLK, clockTimer)
+		variable time_led: natural := INIT_TIME_LED;
+		variable counter:natural range 0 to LIMIT_TIMER * INIT_TIME_LED;
 	begin 
 		if rising_edge (CLK) then
 			counter := counter + 1;
-			
+			time_led := INIT_TIME_LED;
 			if counter = LIMIT_TIMER * time_led - 1 then
 				clockTimer <= '1';
 				counter := 0;
@@ -69,25 +57,63 @@ begin
 			end if;
 		end if;
 	end process;
-
-	-- Change led block: changes the led after the time has run out
-	process (gameRunning, clockTimer, num2BePressed, led2BeTurnedOn, btnNotPressed)
+	
+	-- Control Start_game
+	process (startGamePressed, gameRunning, errorHit)
 	begin 
-		if gameRunning = '1' then
-			if rising_edge (clockTimer) then
-				if num2BePressed = led2BeTurnedOn AND btnNotPressed = '1' then
-					-- game over
-					gameRunning <= '0';
-				else
-					-- Generate another random led position
-					
-					-- button resets to not pressed
-					btnNotPressed <= '1';
-				end if;
-			end if;
+		if falling_edge(startGamePressed) then
+			gameRunning <= '1';
+		end if;
+		
+		if errorHit = '1' then
+			gameRunning <= '0';
 		end if;
 	end process;
 	
-	-- Input Block: checks if the led corresponds to the led to be pressed
+	-- Hit detection
+	process (startGamePressed, gameRunning, inputPressed, randomNumber, roundNumber, errorHit, successHit)
+	begin 
+		if (falling_edge(inputPressed) AND gameRunning = '1') then
+			if randomNumber = roundNumber then
+				successHit <= '1';
+			else
+				errorHit <= '1';
+			end if;
+		end if;
+		
+		if gameRunning = '0' then
+			errorHit <= '0';
+		end if;
+		
+	end process;
+
+	-- Control randomNumber
+	process (clockTimer, randomNumber, gameRunning, successHit, totalPoints)
+	begin 
+		if (rising_edge(clockTimer) AND gameRunning = '1') then
+			if successHit = '1' then
+				totalPoints <= totalPoints + 1;
+			end if;
+			-- incrementador de led			
+			if randomNumber = (NUM_LEDS-1) then
+				randomNumber <= 0;
+			else
+				randomNumber <= randomNumber + 1;
+			end if;
+		end if;
+	end process;
+
+	-- Control roundNumber
+	process (successHit, roundNumber, gameRunning)
+	begin 
+		if (rising_edge(successHit) AND gameRunning = '1') then
+			roundNumber <= roundNumber - 1;
+		end if;
+	end process;
 	
+	ACENDE_LED: for i in 0 to (NUM_LEDS - 1) generate
+		LEDS(i) <= '1' when (i = randomNumber) 	else
+					  '0';
+	end generate ACENDE_LED;
+
 end architecture;

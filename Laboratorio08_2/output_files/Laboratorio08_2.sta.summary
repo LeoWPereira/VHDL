@@ -1,0 +1,173 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : -3.749
+TNS   : -149.514
+
+Type  : Slow 1200mV 85C Model Setup 'debouncer:btnInput|result'
+Slack : -2.378
+TNS   : -2.378
+
+Type  : Slow 1200mV 85C Model Setup 'clockTimer'
+Slack : -0.525
+TNS   : -2.065
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : -0.148
+TNS   : -0.231
+
+Type  : Slow 1200mV 85C Model Hold 'clockTimer'
+Slack : 0.271
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'debouncer:btnInput|result'
+Slack : 1.100
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'debouncer:btnInput|result'
+Slack : -0.471
+TNS   : -0.471
+
+Type  : Slow 1200mV 85C Model Recovery 'debouncer:btnStartGame|result'
+Slack : -0.104
+TNS   : -0.104
+
+Type  : Slow 1200mV 85C Model Removal 'debouncer:btnStartGame|result'
+Slack : 0.702
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'debouncer:btnInput|result'
+Slack : 1.072
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -77.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clockTimer'
+Slack : -1.000
+TNS   : -6.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'debouncer:btnInput|result'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'debouncer:btnStartGame|result'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -3.221
+TNS   : -124.977
+
+Type  : Slow 1200mV 0C Model Setup 'debouncer:btnInput|result'
+Slack : -2.085
+TNS   : -2.085
+
+Type  : Slow 1200mV 0C Model Setup 'clockTimer'
+Slack : -0.362
+TNS   : -1.307
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : -0.131
+TNS   : -0.197
+
+Type  : Slow 1200mV 0C Model Hold 'clockTimer'
+Slack : 0.292
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'debouncer:btnInput|result'
+Slack : 1.021
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'debouncer:btnInput|result'
+Slack : -0.309
+TNS   : -0.309
+
+Type  : Slow 1200mV 0C Model Recovery 'debouncer:btnStartGame|result'
+Slack : 0.012
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'debouncer:btnStartGame|result'
+Slack : 0.627
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'debouncer:btnInput|result'
+Slack : 0.965
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -77.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clockTimer'
+Slack : -1.000
+TNS   : -6.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'debouncer:btnInput|result'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'debouncer:btnStartGame|result'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -1.686
+TNS   : -54.016
+
+Type  : Fast 1200mV 0C Model Setup 'debouncer:btnInput|result'
+Slack : -1.163
+TNS   : -1.163
+
+Type  : Fast 1200mV 0C Model Setup 'clockTimer'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : -0.193
+TNS   : -0.315
+
+Type  : Fast 1200mV 0C Model Hold 'clockTimer'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'debouncer:btnInput|result'
+Slack : 0.570
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'debouncer:btnInput|result'
+Slack : 0.164
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'debouncer:btnStartGame|result'
+Slack : 0.386
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'debouncer:btnStartGame|result'
+Slack : 0.386
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'debouncer:btnInput|result'
+Slack : 0.595
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -81.461
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clockTimer'
+Slack : -1.000
+TNS   : -6.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'debouncer:btnInput|result'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'debouncer:btnStartGame|result'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------
