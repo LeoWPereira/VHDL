@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Laboratorio08_2
-Wed May 09 17:27:34 2018
+Wed May 23 17:05:36 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,7 +10,16 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |Laboratorio08_2
+ 10. Parameter Settings for User Entity Instance: HexToSSD:num2disp
+ 11. Parameter Settings for User Entity Instance: RNG:rand
+ 12. Parameter Settings for Inferred Entity Instance: HexToSSD:num2disp|lpm_divide:Mod0
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -36,20 +45,20 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Wed May 09 17:27:34 2018               ;
+; Analysis & Synthesis Status        ; Successful - Wed May 23 17:05:36 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Laboratorio08_2                                 ;
 ; Top-level Entity Name              ; Laboratorio08_2                                 ;
 ; Family                             ; Cyclone III                                     ;
-; Total logic elements               ; N/A until Partition Merge                       ;
-;     Total combinational functions  ; N/A until Partition Merge                       ;
-;     Dedicated logic registers      ; N/A until Partition Merge                       ;
-; Total registers                    ; N/A until Partition Merge                       ;
-; Total pins                         ; N/A until Partition Merge                       ;
-; Total virtual pins                 ; N/A until Partition Merge                       ;
-; Total memory bits                  ; N/A until Partition Merge                       ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
-; Total PLLs                         ; N/A until Partition Merge                       ;
+; Total logic elements               ; 22                                              ;
+;     Total combinational functions  ; 18                                              ;
+;     Dedicated logic registers      ; 8                                               ;
+; Total registers                    ; 8                                               ;
+; Total pins                         ; 16                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -151,41 +160,219 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                              ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                          ; Library ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------+---------+
+; ../share/RNG/RNG.vhd             ; yes             ; User VHDL File               ; C:/altera/13.0/Projects/share/RNG/RNG.vhd                             ;         ;
+; ../share/HexToSSD/HexToSSD.vhd   ; yes             ; User VHDL File               ; C:/altera/13.0/Projects/share/HexToSSD/HexToSSD.vhd                   ;         ;
+; ../share/own_library.vhd         ; yes             ; User VHDL File               ; C:/altera/13.0/Projects/share/own_library.vhd                         ;         ;
+; Laboratorio08_2.vhd              ; yes             ; User VHDL File               ; C:/altera/13.0/Projects/Laboratorio08_2/Laboratorio08_2.vhd           ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                 ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc      ;         ;
+; db/lpm_divide_98m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0/Projects/Laboratorio08_2/db/lpm_divide_98m.tdf         ;         ;
+; db/sign_div_unsign_7kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0/Projects/Laboratorio08_2/db/sign_div_unsign_7kh.tdf    ;         ;
+; db/alt_u_div_p2f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0/Projects/Laboratorio08_2/db/alt_u_div_p2f.tdf          ;         ;
+; db/add_sub_unc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0/Projects/Laboratorio08_2/db/add_sub_unc.tdf            ;         ;
+; db/add_sub_vnc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/altera/13.0/Projects/Laboratorio08_2/db/add_sub_vnc.tdf            ;         ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                                                                                    ;
++---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                                                                            ;
++---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Total logic elements              ; 22                                                                                                                               ;
+;                                             ;                                                                                                                                  ;
+; Total combinational functions               ; 18                                                                                                                               ;
+; Logic element usage by number of LUT inputs ;                                                                                                                                  ;
+;     -- 4 input functions                    ; 9                                                                                                                                ;
+;     -- 3 input functions                    ; 4                                                                                                                                ;
+;     -- <=2 input functions                  ; 5                                                                                                                                ;
+;                                             ;                                                                                                                                  ;
+; Logic elements by mode                      ;                                                                                                                                  ;
+;     -- normal mode                          ; 15                                                                                                                               ;
+;     -- arithmetic mode                      ; 3                                                                                                                                ;
+;                                             ;                                                                                                                                  ;
+; Total registers                             ; 8                                                                                                                                ;
+;     -- Dedicated logic registers            ; 8                                                                                                                                ;
+;     -- I/O registers                        ; 0                                                                                                                                ;
+;                                             ;                                                                                                                                  ;
+; I/O pins                                    ; 16                                                                                                                               ;
+; Embedded Multiplier 9-bit elements          ; 0                                                                                                                                ;
+; Maximum fan-out node                        ; HexToSSD:num2disp|lpm_divide:Mod0|lpm_divide_98m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_p2f:divider|StageOut[15]~0 ;
+; Maximum fan-out                             ; 7                                                                                                                                ;
+; Total fan-out                               ; 94                                                                                                                               ;
+; Average fan-out                             ; 1.62                                                                                                                             ;
++---------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                       ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                ; Library Name ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |Laboratorio08_2                          ; 18 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 16   ; 0            ; |Laboratorio08_2                                                                                                                   ; work         ;
+;    |HexToSSD:num2disp|                    ; 14 (7)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio08_2|HexToSSD:num2disp                                                                                                 ; work         ;
+;       |lpm_divide:Mod0|                   ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio08_2|HexToSSD:num2disp|lpm_divide:Mod0                                                                                 ; work         ;
+;          |lpm_divide_98m:auto_generated|  ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio08_2|HexToSSD:num2disp|lpm_divide:Mod0|lpm_divide_98m:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_7kh:divider| ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio08_2|HexToSSD:num2disp|lpm_divide:Mod0|lpm_divide_98m:auto_generated|sign_div_unsign_7kh:divider                       ; work         ;
+;                |alt_u_div_p2f:divider|    ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio08_2|HexToSSD:num2disp|lpm_divide:Mod0|lpm_divide_98m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_p2f:divider ; work         ;
+;    |RNG:rand|                             ; 4 (4)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Laboratorio08_2|RNG:rand                                                                                                          ; work         ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 8     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |Laboratorio08_2 ;
++----------------+----------+-----------------------------------------------------+
+; Parameter Name ; Value    ; Type                                                ;
++----------------+----------+-----------------------------------------------------+
+; FCLK           ; 50000000 ; Signed Integer                                      ;
+; MIN_VALUE      ; 0        ; Signed Integer                                      ;
+; MAX_VALUE      ; 9        ; Signed Integer                                      ;
+; BASE_NUM       ; 10       ; Signed Integer                                      ;
++----------------+----------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: HexToSSD:num2disp ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; min_value      ; 0     ; Signed Integer                        ;
+; max_value      ; 9     ; Signed Integer                        ;
+; base_num       ; 10    ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: RNG:rand ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; min_value      ; 0     ; Signed Integer               ;
+; max_value      ; 9     ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: HexToSSD:num2disp|lpm_divide:Mod0 ;
++------------------------+----------------+------------------------------------------+
+; Parameter Name         ; Value          ; Type                                     ;
++------------------------+----------------+------------------------------------------+
+; LPM_WIDTHN             ; 4              ; Untyped                                  ;
+; LPM_WIDTHD             ; 4              ; Untyped                                  ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                  ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                  ;
+; LPM_PIPELINE           ; 0              ; Untyped                                  ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                  ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                  ;
+; CBXI_PARAMETER         ; lpm_divide_98m ; Untyped                                  ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                  ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                  ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                               ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                             ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                             ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                           ;
++------------------------+----------------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed May 09 17:27:33 2018
+    Info: Processing started: Wed May 23 17:05:31 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Laboratorio08_2 -c Laboratorio08_2
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 2 design units, including 1 entities, in source file /altera/13.0sp1/vhdl/share/hextossd/hextossd.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /altera/13.0/projects/share/rng/rng.vhd
+    Info (12022): Found design unit 1: RNG-rtl
+    Info (12023): Found entity 1: RNG
+Info (12021): Found 2 design units, including 1 entities, in source file /altera/13.0/projects/share/hextossd/hextossd.vhd
     Info (12022): Found design unit 1: HexToSSD-HexToSSD
     Info (12023): Found entity 1: HexToSSD
-Info (12021): Found 2 design units, including 1 entities, in source file /altera/13.0sp1/vhdl/share/debouncer/debouncer.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /altera/13.0/projects/share/debouncer/debouncer.vhd
     Info (12022): Found design unit 1: debouncer-logic
     Info (12023): Found entity 1: debouncer
-Info (12021): Found 1 design units, including 0 entities, in source file /altera/13.0sp1/vhdl/share/own_library.vhd
+Info (12021): Found 1 design units, including 0 entities, in source file /altera/13.0/projects/share/own_library.vhd
     Info (12022): Found design unit 1: own_library
 Info (12021): Found 2 design units, including 1 entities, in source file laboratorio08_2.vhd
-    Info (12022): Found design unit 1: Laboratorio08_2-Laboratorio08_2
+    Info (12022): Found design unit 1: Laboratorio08_2-behave
     Info (12023): Found entity 1: Laboratorio08_2
 Info (12127): Elaborating entity "Laboratorio08_2" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at Laboratorio08_2.vhd(66): signal "startGamePressed" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Laboratorio08_2.vhd(83): signal "inputPressed" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Error (10821): HDL error at Laboratorio08_2.vhd(83): can't infer register for "btnNotPressed" because its behavior does not match any supported register model File: C:/altera/13.0sp1/VHDL/Laboratorio08_2/Laboratorio08_2.vhd Line: 83
-Info (10041): Inferred latch for "btnNotPressed" at Laboratorio08_2.vhd(63)
-Error (10821): HDL error at Laboratorio08_2.vhd(71): can't infer register for "gameRunning" because its behavior does not match any supported register model File: C:/altera/13.0sp1/VHDL/Laboratorio08_2/Laboratorio08_2.vhd Line: 71
-Error (10818): Can't infer register for "gameRunning" at Laboratorio08_2.vhd(83) because it does not hold its value outside the clock edge File: C:/altera/13.0sp1/VHDL/Laboratorio08_2/Laboratorio08_2.vhd Line: 83
-Error (10822): HDL error at Laboratorio08_2.vhd(66): couldn't implement registers for assignments on this clock edge File: C:/altera/13.0sp1/VHDL/Laboratorio08_2/Laboratorio08_2.vhd Line: 66
-Error (10822): HDL error at Laboratorio08_2.vhd(71): couldn't implement registers for assignments on this clock edge File: C:/altera/13.0sp1/VHDL/Laboratorio08_2/Laboratorio08_2.vhd Line: 71
-Error (10822): HDL error at Laboratorio08_2.vhd(83): couldn't implement registers for assignments on this clock edge File: C:/altera/13.0sp1/VHDL/Laboratorio08_2/Laboratorio08_2.vhd Line: 83
-Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 7 errors, 3 warnings
-    Error: Peak virtual memory: 525 megabytes
-    Error: Processing ended: Wed May 09 17:27:34 2018
-    Error: Elapsed time: 00:00:01
-    Error: Total CPU time (on all processors): 00:00:01
+Info (12128): Elaborating entity "HexToSSD" for hierarchy "HexToSSD:num2disp"
+Info (12128): Elaborating entity "RNG" for hierarchy "RNG:rand"
+Info (278001): Inferred 1 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "HexToSSD:num2disp|Mod0"
+Info (12130): Elaborated megafunction instantiation "HexToSSD:num2disp|lpm_divide:Mod0"
+Info (12133): Instantiated megafunction "HexToSSD:num2disp|lpm_divide:Mod0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "4"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_98m.tdf
+    Info (12023): Found entity 1: lpm_divide_98m
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_7kh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_7kh
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_p2f.tdf
+    Info (12023): Found entity 1: alt_u_div_p2f
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_unc.tdf
+    Info (12023): Found entity 1: add_sub_unc
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_vnc.tdf
+    Info (12023): Found entity 1: add_sub_vnc
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "SSDS[1][0]" is stuck at VCC
+    Warning (13410): Pin "SSDS[1][1]" is stuck at VCC
+    Warning (13410): Pin "SSDS[1][2]" is stuck at VCC
+    Warning (13410): Pin "SSDS[1][3]" is stuck at VCC
+    Warning (13410): Pin "SSDS[1][4]" is stuck at VCC
+    Warning (13410): Pin "SSDS[1][5]" is stuck at VCC
+    Warning (13410): Pin "SSDS[1][6]" is stuck at VCC
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 38 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 14 output pins
+    Info (21061): Implemented 22 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 9 warnings
+    Info: Peak virtual memory: 557 megabytes
+    Info: Processing ended: Wed May 23 17:05:36 2018
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:03
 
 
