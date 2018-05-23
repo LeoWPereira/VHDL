@@ -1,5 +1,5 @@
 Flow report for Laboratorio08_2
-Wed May 16 19:22:49 2018
+Sat Apr 28 01:44:46 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,17 +40,17 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Wed May 16 19:22:46 2018           ;
+; Flow Status                        ; Successful - Sat Apr 28 01:44:43 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Laboratorio08_2                                 ;
 ; Top-level Entity Name              ; Laboratorio08_2                                 ;
 ; Family                             ; Cyclone III                                     ;
 ; Device                             ; EP3C16U484C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 173 / 15,408 ( 1 % )                            ;
-;     Total combinational functions  ; 168 / 15,408 ( 1 % )                            ;
-;     Dedicated logic registers      ; 82 / 15,408 ( < 1 % )                           ;
-; Total registers                    ; 82                                              ;
+; Total logic elements               ; 284 / 15,408 ( 2 % )                            ;
+;     Total combinational functions  ; 279 / 15,408 ( 2 % )                            ;
+;     Dedicated logic registers      ; 88 / 15,408 ( < 1 % )                           ;
+; Total registers                    ; 88                                              ;
 ; Total pins                         ; 41 / 347 ( 12 % )                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 516,096 ( 0 % )                             ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/16/2018 19:22:34 ;
+; Start date & time ; 04/28/2018 01:44:30 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Laboratorio08_2     ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+-----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                   ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+-----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 141812757117286.152650935407888         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 141812757117286.152489067009928         ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                      ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                       ; --            ; --          ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                    ; --            ; --          ; --         ;
@@ -94,11 +94,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 543 MB              ; 00:00:02                           ;
-; Fitter                    ; 00:00:07     ; 1.0                     ; 767 MB              ; 00:00:07                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 460 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 500 MB              ; 00:00:02                           ;
-; Total                     ; 00:00:12     ; --                      ; --                  ; 00:00:12                           ;
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4656 MB             ; 00:00:03                           ;
+; Fitter                    ; 00:00:08     ; 1.0                     ; 4872 MB             ; 00:00:07                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4553 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4590 MB             ; 00:00:02                           ;
+; Total                     ; 00:00:13     ; --                      ; --                  ; 00:00:13                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

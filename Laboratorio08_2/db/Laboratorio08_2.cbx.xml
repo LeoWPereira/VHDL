@@ -2,5 +2,8 @@
 <LOG_ROOT>
 	<PROJECT NAME="Laboratorio08_2">
 		<CBX_INST_ENTRY INSTANCE_NAME="|Laboratorio08_2|HexToSSD:num2dispPoints|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_88m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Laboratorio08_2|HexToSSD:num2dispRandomNumber|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_98m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Laboratorio08_2|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_bfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Laboratorio08_2|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_ffh.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
