@@ -1,13 +1,18 @@
-----library ieee;
+library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use IEEE.math_real.all;
+use work.own_library.all;
 
-ENTITY Laboratorio_09_1 IS
+ENTITY Laboratorio09_1 IS
 	GENERIC (
-		NUM_CHAVES : INTEGER := 9
+		MIN_VALUE	:	integer 	:= 0;
+		MAX_VALUE	:	integer 	:= 255;
+		NUM_CHAVES : INTEGER := 9;
+		BASE_NUM : INTEGER := 10
 	);
 	PORT(
+		SSDS_INPUT: out SSDArray(((natural(FLOOR(LOG(real(MAX_VALUE), real(BASE_NUM))) + 1.0))) downto 0);
 		LED : OUT STD_LOGIC;
 		BTN_INPUT : IN STD_LOGIC;
 		CHAVES_CHAR : IN STD_LOGIC_VECTOR(NUM_CHAVES-1 DOWNTO 0);
@@ -16,13 +21,16 @@ ENTITY Laboratorio_09_1 IS
 	);
 END;
 
-ARCHITECTURE Laboratorio_09_1 OF Laboratorio_09_1 IS
+ARCHITECTURE Laboratorio09_1 OF Laboratorio09_1 IS
 	TYPE STATE IS (INICIO, PRIMEIRO_A, B, SEGUNDO_A);
 	SIGNAL pr_state, nx_state : STATE;
-	SIGNAL inputPressed: STD_LOGIC;
+	SIGNAL inputPressed : STD_LOGIC;
 	SIGNAL char : CHARACTER;
 BEGIN
+	
 	btnInput: entity work.debouncer PORT MAP (clk => CLK, button => BTN_INPUT, result => inputPressed);
+	
+	ssdInput: entity work.HexToSSD GENERIC MAP (MIN_VALUE => MIN_VALUE, MAX_VALUE => MAX_VALUE, BASE_NUM => BASE_NUM) PORT MAP (numValue => to_integer(unsigned(CHAVES_CHAR)), ssds => SSDS_INPUT);
 	
 	char <= CHARACTER'VAL(to_integer(unsigned(CHAVES_CHAR)));
 	
