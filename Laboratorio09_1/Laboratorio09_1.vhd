@@ -22,7 +22,7 @@ ENTITY Laboratorio09_1 IS
 END;
 
 ARCHITECTURE Laboratorio09_1 OF Laboratorio09_1 IS
-	TYPE STATE IS (INICIO, PRIMEIRO_A, B, SEGUNDO_A);
+	TYPE STATE IS (INICIO, PRIMEIRO_A, PRIMEIRO_A_INT, B_INT, B , SEGUNDO_A, SEGUNDO_A_INT);
 	SIGNAL pr_state, nx_state : STATE;
 	SIGNAL inputPressed : STD_LOGIC;
 	SIGNAL char : CHARACTER;
@@ -34,45 +34,72 @@ BEGIN
 	
 	char <= CHARACTER'VAL(to_integer(unsigned(CHAVES_CHAR)));
 	
-	PROCESS(inputPressed)
+	PROCESS(CLK)
 	BEGIN
-		IF(rising_edge(inputPressed)) THEN
+		IF(rising_edge(CLK)) THEN
 			pr_state <= nx_state;
 		END IF;
 	END PROCESS;
 	
-	PROCESS(pr_state)
-	BEGIN
+	PROCESS(pr_state, nx_state, inputPressed, char)
+	BEGIN 
 		CASE pr_state IS
 			WHEN INICIO =>
 				LED <= '0';
-				IF(char = 'a') THEN
-					nx_state <= PRIMEIRO_A;
+				IF(char = 'a') AND (inputPressed = '0') THEN
+					nx_state <= PRIMEIRO_A_INT;
 				ELSE
 					nx_state <= INICIO;
+				END IF;
+			WHEN PRIMEIRO_A_INT =>
+				LED <= '0';
+				IF(inputPressed = '1') THEN
+					nx_state <= PRIMEIRO_A;
+				ELSE
+					nx_state <= PRIMEIRO_A_INT;
 				END IF;
 			WHEN PRIMEIRO_A =>
 				LED <= '0';
-				IF(char = 'b') THEN
+				IF(char = 'b') AND (inputPressed = '0') THEN
+					nx_state <= B_INT;
+				ELSIF NOT(char = 'b') AND NOT(char = 'a') AND (inputPressed = '0') THEN
+					nx_state <= INICIO;
+				ELSE
+					nx_state <= PRIMEIRO_A;
+				END IF;
+			WHEN B_INT =>
+				LED <= '0';
+				IF(inputPressed = '1') THEN
 					nx_state <= B;
 				ELSE
-					nx_state <= INICIO;
+					nx_state <= B_INT;
 				END IF;
 			WHEN B =>
 				LED <= '0';
-				IF(char = 'a') THEN
+				IF (char = 'a') AND (inputPressed = '0') THEN
+					nx_state <= SEGUNDO_A_INT;
+				ELSIF not(char = 'a') AND (inputPressed = '0') THEN
+					nx_state <= INICIO;
+				ELSE
+					nx_state <= B;
+				END IF;	
+			WHEN SEGUNDO_A_INT =>
+				LED <= '1';
+				IF(inputPressed = '1') THEN
 					nx_state <= SEGUNDO_A;
 				ELSE
-					nx_state <= INICIO;
-				END IF;	
+					nx_state <= SEGUNDO_A_INT;
+				END IF;
 			WHEN SEGUNDO_A =>
 				LED <= '1';
-				IF(char = 'b' and CHAVE_OVERLAP = '1') THEN
-					nx_state <= B;
-				ELSIF(char = 'a') THEN
-					nx_state <= PRIMEIRO_A;
-				ELSE
+				IF( char = 'b' and CHAVE_OVERLAP = '1' AND inputPressed = '0') THEN
+					nx_state <= B_INT;
+				ELSIF (char = 'a') AND (inputPressed = '0') THEN
+					nx_state <= PRIMEIRO_A_INT;
+				ELSIF not(char = 'a') AND (inputPressed = '0') THEN
 					nx_state <= INICIO;
+				ELSE
+					nx_state <= SEGUNDO_A;
 				END IF;
 		END CASE;		
 	END PROCESS;
