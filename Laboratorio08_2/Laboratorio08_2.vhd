@@ -42,6 +42,8 @@ begin
 	num2dispPoints: entity work.HexToSSD GENERIC MAP (MIN_VALUE => 0, MAX_VALUE => MAX_POINTS) PORT MAP (numValue => totalPoints, ssds => SSDS_POINTS);
 	num2dispRandomNumber: entity work.HexToSSD GENERIC MAP (MIN_VALUE => 0, MAX_VALUE => NUM_LEDS - 1) PORT MAP (numValue => roundNumber, ssds => SSD_RANDOM_POSITION);
 
+	--randomLED : entity work.RNG GENERIC MAP(MIN_VALUE => 0, MAX_VALUE => (NUM_LEDS - 1)) PORT MAP (i_clk => (CLK), i_btn => clockTimer, numValue => randomNumber);
+	
 	-- Timer
 	process (CLK, clockTimer, totalPoints)
 		variable time_led: natural := INIT_TIME_LED;
@@ -50,6 +52,7 @@ begin
 		if rising_edge (CLK) then
 			counter := counter + 1;
 			time_led := INIT_TIME_LED -(totalPoints * (INIT_TIME_LED / (MAX_POINTS*2)));
+			
 			if counter = LIMIT_TIMER * time_led - 1 then
 				clockTimer <= '1';
 				counter := 0;
@@ -105,7 +108,7 @@ begin
 				roundNumber <= roundNumber - 1;
 				
 				-- Control points
-				totalPoins <= totalPoints + 1;
+				totalPoints <= totalPoints + 1;
 			end if;
 		end if;
 		
@@ -117,6 +120,7 @@ begin
 				hitNotDetected := '0';
 			end if;
 			-- incrementador de led			
+			--gera random led
 			if randomNumber = (NUM_LEDS-1) then
 				randomNumber <= 0;
 			else

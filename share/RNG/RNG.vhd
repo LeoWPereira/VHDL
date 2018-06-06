@@ -37,7 +37,7 @@ architecture rtl of RNG is
 	signal totalValue: integer range MIN_VALUE to MAX_VALUE := 0;
 	
 begin
-	process (i_clk) begin 
+	process (i_clk, totalValue) begin 
 		if rising_edge (i_clk) then
 			totalValue <= totalValue + 1;
 			 
@@ -47,7 +47,7 @@ begin
 		end if;
 	end process;
 	
-	process (i_btn) begin 
+	process (i_btn, totalValue) begin 
 		if rising_edge (i_btn) then
 			numValue <= totalValue;
 		end if;
