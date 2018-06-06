@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP3C16U484) Path("C:/altera/13.0/Projects/Laboratorio09_2/output_files/") File("Laboratorio09_2.sof") MfrSpec(OpMask(1));
+		Device PartName(EP3C16U484) Path("C:/altera/13.0sp1/VHDL/Laboratorio10_1/output_files/") File("Laboratorio10_1.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

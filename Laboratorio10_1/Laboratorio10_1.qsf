@@ -50,7 +50,7 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name VHDL_FILE Laboratorio10_1.vhd
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
-set_location_assignment PIN_G21 -to clk
+set_location_assignment PIN_B12 -to clk
 set_location_assignment PIN_H2 -to in_put
 set_location_assignment PIN_G3 -to in_remove
 set_location_assignment PIN_F1 -to in_rst

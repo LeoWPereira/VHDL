@@ -13,7 +13,6 @@ ENTITY Laboratorio10_1 IS
 	PORT (
 		clk: IN STD_LOGIC;
 		in_put, in_remove, in_rst: IN STD_LOGIC;
-		output_debug: OUT SSDARRAY (NATURAL(CEIL(LOG10(REAL(NUM_MAX))))-1 DOWNTO 0);
 		output: OUT STD_LOGIC_VECTOR (NUM_LEDS - 1 DOWNTO 0)
 	);
 END ENTITY;
