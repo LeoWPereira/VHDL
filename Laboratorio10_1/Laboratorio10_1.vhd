@@ -1,6 +1,6 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
-USE work.meupacote.all;
+USE work.own_library.all;
 USE ieee.math_real.all;
 
 ENTITY Laboratorio10_1 IS
@@ -24,7 +24,7 @@ ARCHITECTURE arch OF Laboratorio10_1 IS
 	signal divisor: DIV;
 	signal aux_disp: TIPODISP;
 		
-	CONSTANT TEMPO_500MS: NATURAL := FCLK / 2;	
+	CONSTANT TEMPO_500MS: NATURAL := FCLK / 10;	
 	CONSTANT tmax: NATURAL := FCLK * 5;
 	
 	SIGNAL put, remove, rst: STD_LOGIC;
@@ -35,9 +35,23 @@ ARCHITECTURE arch OF Laboratorio10_1 IS
 -- FLAGS
 	SIGNAL flag_put, flag_remove, flag_end_put, flag_end_remove: STD_LOGIC := '0';
 BEGIN
-	DB1: entity work.debounce port map (clk => clk, input => not in_put, output => put);
-	DB2: entity work.debounce port map (clk => clk, input => not in_remove, output => remove);
-	DB3: entity work.debounce port map (clk => clk, input => not in_rst, output => rst);
+	DB1: entity work.debouncer PORT MAP (
+		clk => clk, 
+		button => not in_put, 
+		result => put
+	);
+	
+	DB2: entity work.debouncer PORT MAP (
+		clk => clk, 
+		button => not in_remove, 
+		result => remove
+	);
+	
+	DB3: entity work.debouncer PORT MAP (
+		clk => clk, 
+		button => not in_rst, 
+		result => rst
+	);
 	
 --GERA SYS_CLK
 PROCESS(clk)
@@ -139,22 +153,7 @@ divisor(0) <= 1;
 
 G3: FOR i IN 0 TO NATURAL(CEIL(LOG10(REAL(NUM_MAX))))-1 GENERATE
 		aux_disp(i) <= (pos_atual / divisor(i)) MOD 10;
-		output_debug(i) <= num_0 WHEN aux_disp(i) = 0 ELSE
-		  num_1 WHEN aux_disp(i) = 1 ELSE
-		  num_2 WHEN aux_disp(i) = 2 ELSE
-		  num_3 WHEN aux_disp(i) = 3 ELSE
-		  num_4 WHEN aux_disp(i) = 4 ELSE
-		  num_5 WHEN aux_disp(i) = 5 ELSE
-		  num_6 WHEN aux_disp(i) = 6 ELSE
-		  num_7 WHEN aux_disp(i) = 7 ELSE
-		  num_8 WHEN aux_disp(i) = 8 ELSE
-		  num_9 WHEN aux_disp(i) = 9 ELSE
-		  num_a WHEN aux_disp(i) = 10 ELSE
-		  num_b WHEN aux_disp(i) = 11 ELSE
-		  num_c WHEN aux_disp(i) = 12 ELSE
-		  num_d WHEN aux_disp(i) = 13 ELSE
-		  num_e WHEN aux_disp(i) = 14 ELSE
-		  num_f;
+		
 	END GENERATE G3;
 	
 END ARCHITECTURE;
