@@ -1,6 +1,6 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
-USE work.meupacote.all;
+USE work.own_library.all;
 USE ieee.math_real.all;
 
 ENTITY Laboratorio10_2 IS
@@ -25,9 +25,9 @@ ARCHITECTURE arch OF Laboratorio10_2 IS
 	
 	SIGNAL button1, button2, rst: STD_LOGIC;
 BEGIN
-	DB1: entity work.debounce port map (clk => clk, input => not in_button1, output => button1);
-	DB2: entity work.debounce port map (clk => clk, input => not in_button2, output => button2);
-	DB3: entity work.debounce port map (clk => clk, input => not in_rst, output => rst);
+	DB1: entity work.debouncer port map (clk => clk, button => not in_button1, result => button1);
+	DB2: entity work.debouncer port map (clk => clk, button => not in_button2, result => button2);
+	DB3: entity work.debouncer port map (clk => clk, button => not in_rst, result => rst);
 	
 -- STATE MACHINE
 

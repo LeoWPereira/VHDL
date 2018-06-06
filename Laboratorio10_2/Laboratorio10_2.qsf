@@ -53,3 +53,18 @@ set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_global_assignment -name SEARCH_PATH "c:\\altera\\13.0\\projects\\share\\hextossd"
 set_global_assignment -name SEARCH_PATH "c:\\altera\\13.0\\projects\\share\\debouncer"
 set_global_assignment -name VHDL_FILE Laboratorio10_2.vhd
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_B12 -to clk
+set_location_assignment PIN_F1 -to in_button1
+set_location_assignment PIN_G3 -to in_button2
+set_location_assignment PIN_H2 -to in_rst
+set_location_assignment PIN_A13 -to out_green1
+set_location_assignment PIN_E11 -to out_green2
+set_location_assignment PIN_A14 -to out_red1
+set_location_assignment PIN_H13 -to out_red2
+set_location_assignment PIN_A15 -to out_yellow1
+set_location_assignment PIN_F13 -to out_yellow2
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
