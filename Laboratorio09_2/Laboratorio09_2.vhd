@@ -7,11 +7,8 @@ use work.own_library.all;
 
 entity Laboratorio09_2 is
 	generic (
-		FCLK: NATURAL := 50_000_000;
 		NUM_SEMAFOROS : NATURAL := 2;
 		BASE_NUM:	NATURAL	:= 16;
-		
-		INIT_TIME_LED: NATURAL := 1000; -- value in ms
 		
 		SEMAFORO_VERDE:	INTEGER	:= 15;
 		SEMAFORO_VERMELHO:	INTEGER	:= -15
@@ -28,15 +25,13 @@ entity Laboratorio09_2 is
 end entity;
 --
 architecture Laboratorio09_2 of Laboratorio09_2 IS
-	constant LIMIT_TIMER: natural := FCLK / 1000;
-	
-	signal inicioSistema: std_logic := '0';
 	signal inputPressed: std_logic := '0';
-	
-	signal sistemaInicializado: std_logic := '0';
 	
 	signal SEMAFORO1: integer range SEMAFORO_VERMELHO to SEMAFORO_VERDE := SEMAFORO_VERMELHO;
 	signal SEMAFORO2: integer range SEMAFORO_VERMELHO to SEMAFORO_VERDE := SEMAFORO_VERMELHO;
+
+	TYPE STATE IS (START, ESTADO1, ESTADO2, ESTADO_INT_1, ESTADO_INT_2);
+	SIGNAL pr_state, nx_state : STATE;
 
 	begin
 	btnInput: entity work.debouncer PORT MAP (
@@ -65,36 +60,55 @@ architecture Laboratorio09_2 of Laboratorio09_2 IS
 		ssds => SSDS_SEMAFORO2
 	);
 	
-	-- Timer
-	process (CLK, inicioSistema)
-	variable initCounter:integer range 0 to 1000000000 := 0;
-	begin
-		if rising_edge (CLK) then
-			initCounter := initCounter + 1;
-		end if;
-		
-		if initCounter = 1000000000 then
-			inicioSistema <= '1';
-		else
-			inicioSistema <= '0';
-		end if;
-	end process;
-	
-	process (inputPressed, sistemaInicializado, SEMAFORO1, SEMAFORO2)
-	variable counter:integer range SEMAFORO_VERMELHO to SEMAFORO_VERDE;
+	process (CLK, pr_state, nx_state)
 	begin 
-		if falling_edge (inputPressed) then
-			counter := SEMAFORO1;
-			SEMAFORO1 <= SEMAFORO2;
-			SEMAFORO2 <= counter;
-		end if;
-		
-		if inicioSistema = '1' and sistemaInicializado = '0' then
-			SEMAFORO1 <= SEMAFORO_VERDE;
-			SEMAFORO2 <= SEMAFORO_VERMELHO;
-			
-			--sistemaInicializado <= '0';
+		if rising_edge (CLK) then
+			pr_state <= nx_state;
 		end if;
 	end process;
+
+	PROCESS(pr_state, SEMAFORO1, SEMAFORO2, inputPressed, nx_state)
+	BEGIN
+		CASE pr_state IS
+			WHEN START =>
+				SEMAFORO1 <= SEMAFORO_VERMELHO;
+				SEMAFORO2 <= SEMAFORO_VERMELHO;
+				nx_state <= ESTADO1;
+			WHEN ESTADO1 =>
+				SEMAFORO1 <= SEMAFORO_VERDE;
+				SEMAFORO2 <= SEMAFORO_VERMELHO;
+				IF inputPressed = '0' then
+					nx_state <= ESTADO_INT_1;
+				ELSE 
+					nx_state <= ESTADO1;
+				END IF;
+			WHEN ESTADO_INT_1 =>
+				SEMAFORO1 <= SEMAFORO_VERMELHO;
+				SEMAFORO2 <= SEMAFORO_VERDE;
+				
+				IF inputPressed = '1' then
+					nx_state <= ESTADO2;
+				ELSE 
+					nx_state <= ESTADO_INT_1;
+				END IF;
+			WHEN ESTADO2 =>
+				SEMAFORO1 <= SEMAFORO_VERMELHO;
+				SEMAFORO2 <= SEMAFORO_VERDE;
+				IF inputPressed = '0' then
+					nx_state <= ESTADO_INT_2;
+				ELSE 
+					nx_state <= ESTADO2;
+				END IF;	
+			WHEN ESTADO_INT_2 =>
+				SEMAFORO1 <= SEMAFORO_VERDE;
+				SEMAFORO2 <= SEMAFORO_VERMELHO;
+				
+				IF inputPressed = '1' then
+					nx_state <= ESTADO1;
+				ELSE 
+					nx_state <= ESTADO_INT_2;
+				END IF;
+		END CASE;		
+	END PROCESS;
 	
 end architecture;
